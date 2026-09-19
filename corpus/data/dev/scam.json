@@ -1,0 +1,135 @@
+[
+  {
+    "id": "dev.01.parcel_customs_duty",
+    "title": "Shipping desk claims a Dubai consignment needs duty paid to a UPI ID",
+    "label": "scam",
+    "family": "parcel_customs",
+    "acceptableFamilies": ["digital_arrest"],
+    "locale": "en-IN",
+    "synopsis": "A caller from an 'international shipping desk' says undeclared gold is held in the victim's name, asks for secrecy, sets a same-day deadline and demands duty to a personal UPI ID.",
+    "onsetTurn": 4,
+    "extractionTurn": 8,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "stage": "hook", "text": "Good afternoon, this is Ravi calling from the international shipping desk. Is this Mr Anand Iyer?" },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Yes, who is this?" },
+      { "start": 9.5, "end": 18.0, "speaker": "caller", "stage": "authority_claim", "text": "Sir, a consignment addressed to you from Dubai is held at the customs warehouse. It contains undeclared electronics and gold jewellery." },
+      { "start": 18.5, "end": 21.0, "speaker": "callee", "text": "I wasn't expecting any parcel from Dubai." },
+      { "start": 21.5, "end": 31.0, "speaker": "caller", "stage": "authority_claim", "text": "The officer says the sender used your name and mobile number. Unless the import duty is settled, a case will be registered against you." },
+      { "start": 31.5, "end": 39.0, "speaker": "caller", "stage": "isolation", "text": "Please don't speak to anyone about this parcel for now. It is a sensitive case and the sender may be watching you." },
+      { "start": 39.5, "end": 41.5, "speaker": "callee", "text": "What do I need to do?" },
+      { "start": 42.0, "end": 50.0, "speaker": "caller", "stage": "urgency", "text": "The duty office closes at five today. After that the goods are confiscated and your name goes on a watch list." },
+      { "start": 50.5, "end": 60.0, "speaker": "caller", "stage": "extraction", "text": "Pay twenty-two thousand rupees duty to the officer's UPI ID I am messaging you, and the case will be closed immediately.",
+        "claims": [ { "span": "Pay twenty-two thousand rupees duty to the officer's UPI ID I am messaging you", "expected": "false", "groundTruthId": "gt.customs_courier.02" } ] }
+    ]
+  },
+  {
+    "id": "dev.02.romance_investment_pool",
+    "title": "Online partner pushes a secret trading pool before a midnight deadline",
+    "label": "scam",
+    "family": "romance_advance_fee",
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "A partner met online, supposedly working on a ship, invites the victim into an uncle's trading pool, asks for secrecy from family, sets a deadline, asks for a deposit to an app wallet and refuses video.",
+    "onsetTurn": 3,
+    "extractionTurn": 6,
+    "turns": [
+      { "start": 0.0, "end": 6.0, "speaker": "caller", "stage": "hook", "text": "Hey, it's Lena. Sorry I missed your message earlier, the shift on the ship ran long." },
+      { "start": 6.5, "end": 8.5, "speaker": "callee", "text": "No problem, how are you doing?" },
+      { "start": 9.0, "end": 18.0, "speaker": "caller", "stage": "authority_claim", "text": "Honestly I'm excited. My uncle's trading group made another big return this week, and I told him I'd bring you in." },
+      { "start": 18.5, "end": 27.0, "speaker": "caller", "stage": "isolation", "text": "He only lets family and partners join, so please don't mention it to your sister. She would never understand us." },
+      { "start": 27.5, "end": 30.0, "speaker": "callee", "text": "I'm not sure, I've never invested like that." },
+      { "start": 30.5, "end": 39.0, "speaker": "caller", "stage": "urgency", "text": "The pool closes at midnight their time, and the bonus only applies to deposits made before then." },
+      { "start": 39.5, "end": 49.0, "speaker": "caller", "stage": "extraction", "text": "Just move five thousand dollars to the wallet in the app I sent, and we'll withdraw together once your profit doubles." },
+      { "start": 49.5, "end": 52.0, "speaker": "callee", "text": "Can we talk on video first?" },
+      { "start": 52.5, "end": 60.0, "speaker": "caller", "stage": "authority_claim", "text": "The satellite link on board doesn't allow video, but I promise we'll meet when my contract ends.",
+        "claims": [ { "span": "The satellite link on board doesn't allow video", "expected": "false", "groundTruthId": "gt.romance_investment.01" } ] }
+    ]
+  },
+  {
+    "id": "dev.03.otp_upi_refund",
+    "title": "Shopping-app 'customer care' reverses a failed refund through a UPI request",
+    "label": "scam",
+    "family": "otp_harvest",
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "A caller posing as a shopping app's customer care says a refund failed, keeps the victim on the line, and gets them to approve a UPI collect request with their PIN.",
+    "onsetTurn": 3,
+    "extractionTurn": 5,
+    "turns": [
+      { "start": 0.0, "end": 8.0, "speaker": "caller", "stage": "hook", "text": "Hello, I'm calling from the customer care of your shopping app about the return you requested for the mixer grinder." },
+      { "start": 8.5, "end": 10.0, "speaker": "callee", "text": "Yes, I returned it last week." },
+      { "start": 10.5, "end": 18.0, "speaker": "caller", "stage": "authority_claim", "text": "The refund of four thousand two hundred rupees failed because of a bank server issue, so we'll process it manually." },
+      { "start": 18.5, "end": 26.0, "speaker": "caller", "stage": "isolation", "text": "Keep this line connected and don't open any other app, or the refund window will reset." },
+      { "start": 26.5, "end": 28.0, "speaker": "callee", "text": "Okay, go ahead." },
+      { "start": 28.5, "end": 36.0, "speaker": "caller", "stage": "extraction", "text": "I've sent a request on your UPI app. Approve it and enter your PIN so the refund gets credited.",
+        "claims": [ { "span": "Approve it and enter your PIN so the refund gets credited", "expected": "false", "groundTruthId": "gt.payments_upi.01" } ] },
+      { "start": 36.5, "end": 40.0, "speaker": "callee", "text": "It says debit of four thousand two hundred." },
+      { "start": 40.5, "end": 48.0, "speaker": "caller", "stage": "urgency", "text": "That's only the display format, sir. The money comes to you, you just authorise it quickly within two minutes." }
+    ]
+  },
+  {
+    "id": "dev.04.digital_arrest_ed",
+    "title": "Enforcement Directorate 'interrogation' in a closed room",
+    "label": "scam",
+    "family": "digital_arrest",
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "A caller posing as an ED officer claims a warrant, orders a video interrogation in a closed room, forbids contacting a lawyer, and demands savings be moved to an audit account.",
+    "onsetTurn": 2,
+    "extractionTurn": 6,
+    "turns": [
+      { "start": 0.0, "end": 8.0, "speaker": "caller", "stage": "hook", "text": "This is Assistant Director Sharma from the Enforcement Directorate. Am I speaking with Mrs Latha Menon?" },
+      { "start": 8.5, "end": 10.0, "speaker": "callee", "text": "Yes. Is something wrong?" },
+      { "start": 10.5, "end": 20.0, "speaker": "caller", "stage": "authority_claim", "text": "A bank account opened with your documents received illegal foreign transfers. The Supreme Court has issued a non-bailable warrant." },
+      { "start": 20.5, "end": 30.0, "speaker": "caller", "stage": "isolation", "text": "You must join a video call now and stay in a closed room. No family member can be present during the interrogation.",
+        "claims": [ { "span": "You must join a video call now and stay in a closed room", "expected": "false", "groundTruthId": "gt.law_enforcement.01" } ] },
+      { "start": 30.5, "end": 33.0, "speaker": "callee", "text": "I'm scared. Can I call my lawyer?" },
+      { "start": 33.5, "end": 42.0, "speaker": "caller", "stage": "isolation", "text": "If you contact a lawyer or anyone else now, it will be treated as tampering with evidence.",
+        "claims": [ { "span": "If you contact a lawyer or anyone else now, it will be treated as tampering with evidence", "expected": "false", "groundTruthId": "gt.law_enforcement.07" } ] },
+      { "start": 42.5, "end": 52.0, "speaker": "caller", "stage": "extraction", "text": "Move all your savings into the audit account I will share. It will come back within three days once you are cleared.",
+        "claims": [ { "span": "Move all your savings into the audit account I will share", "expected": "false", "groundTruthId": "gt.courts_legal.02" } ] }
+    ]
+  },
+  {
+    "id": "dev.05.tech_support_router",
+    "title": "Broadband 'network security team' wants remote access to clean a router",
+    "label": "scam",
+    "family": "tech_support",
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "A caller claiming to be the broadband provider's security team reports overseas traffic from the router, tells the victim to avoid banking and email, threatens disconnection, and asks for a remote-session code.",
+    "onsetTurn": 2,
+    "extractionTurn": 6,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "stage": "hook", "text": "Hi, this is the network security team from your broadband provider. Is this the person who holds the broadband account?" },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Yes, that's me." },
+      { "start": 9.5, "end": 18.0, "speaker": "caller", "stage": "authority_claim", "text": "We've detected unusual traffic from your home router. Someone overseas is using your connection to access bank websites." },
+      { "start": 18.5, "end": 26.0, "speaker": "caller", "stage": "isolation", "text": "Please don't log into your banking or email until we clean the router. The attacker can see everything you type." },
+      { "start": 26.5, "end": 34.0, "speaker": "caller", "stage": "urgency", "text": "Your connection will be cut off in fifteen minutes if we can't secure it, and reactivation takes a week." },
+      { "start": 34.5, "end": 36.0, "speaker": "callee", "text": "What should I do?" },
+      { "start": 36.5, "end": 46.0, "speaker": "caller", "stage": "extraction", "text": "Install the router protection tool from the link I texted, then tell me the session code it shows so our engineer can log in.",
+        "claims": [ { "span": "tell me the session code it shows so our engineer can log in", "expected": "false", "groundTruthId": "gt.tech_support.02" } ] }
+    ]
+  },
+  {
+    "id": "dev.06.ceo_vendor_bank_change",
+    "title": "Supplier contact redirects invoices to a 'new' bank account",
+    "label": "scam",
+    "family": "ceo_wire_fraud",
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "A caller impersonating a known supplier contact announces a bank change after a 'merger', discourages calling their finance team, and pushes an overdue invoice to the new account today.",
+    "onsetTurn": 5,
+    "extractionTurn": 6,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "stage": "hook", "text": "Hi Priya, this is Tom from Norland Supplies, we handle your packaging orders." },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Hi Tom, how can I help?" },
+      { "start": 9.5, "end": 19.0, "speaker": "caller", "stage": "authority_claim", "text": "Our old account is being closed after a bank merger, so all payments from this month need to go to our new account.",
+        "claims": [ { "span": "all payments from this month need to go to our new account", "expected": "false", "groundTruthId": "gt.corporate_payments.02" } ] },
+      { "start": 19.5, "end": 27.0, "speaker": "caller", "stage": "authority_claim", "text": "Our director signed off on it, and I'll email you the updated details straight after this call." },
+      { "start": 27.5, "end": 30.0, "speaker": "callee", "text": "I'd normally confirm bank changes with your finance team." },
+      { "start": 30.5, "end": 39.0, "speaker": "caller", "stage": "isolation", "text": "No need to call them, they're swamped with the audit. Just reply to my email and we'll sort it out." },
+      { "start": 39.5, "end": 48.0, "speaker": "caller", "stage": "extraction", "text": "Invoice 5520 is already overdue, so please send it to the new account today to avoid the late fee." }
+    ]
+  }
+]

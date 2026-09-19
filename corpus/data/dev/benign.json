@@ -1,0 +1,122 @@
+[
+  {
+    "id": "dev.07.benign_pharmacy_refill",
+    "title": "Pharmacy says a prescription refill is ready",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "Routine pharmacy call: refill ready, bring the insurance card, opening hours.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "text": "Hello, this is Greenleaf Pharmacy. Your prescription refill is ready for pickup." },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Great, thank you." },
+      { "start": 9.5, "end": 17.0, "speaker": "caller", "text": "Please bring your insurance card when you come in. The pharmacist may want to go over the new dosage with you." },
+      { "start": 17.5, "end": 19.5, "speaker": "callee", "text": "Sure. Until what time are you open?" },
+      { "start": 20.0, "end": 27.0, "speaker": "caller", "text": "We're open until nine tonight and ten to six on Sunday. The price is the same as last month." },
+      { "start": 27.5, "end": 29.0, "speaker": "callee", "text": "Perfect, I'll come by after work." },
+      { "start": 29.5, "end": 33.0, "speaker": "caller", "text": "Sounds good. Have a nice evening." }
+    ]
+  },
+  {
+    "id": "dev.08.benign_bank_locker_appointment",
+    "title": "Bank branch confirms a locker appointment",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "Hard negative for KYC and OTP scams: a real branch confirms an appointment the customer booked, asks for documents in person and says it never asks for codes by phone.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 8.0, "speaker": "caller", "text": "Good morning, this is the Koramangala branch of your bank, about the locker appointment you booked." },
+      { "start": 8.5, "end": 10.0, "speaker": "callee", "text": "Yes, for Thursday." },
+      { "start": 10.5, "end": 19.0, "speaker": "caller", "text": "Please bring your original Aadhaar and PAN card to the counter. We do not ask for any OTP or PIN over the phone for this." },
+      { "start": 19.5, "end": 21.0, "speaker": "callee", "text": "Okay. Any charges?" },
+      { "start": 21.5, "end": 30.0, "speaker": "caller", "text": "The yearly locker rent is taken from your account as per your agreement, and you'll get a receipt at the counter." },
+      { "start": 30.5, "end": 32.0, "speaker": "callee", "text": "Alright, see you Thursday." },
+      { "start": 32.5, "end": 36.0, "speaker": "caller", "text": "Thank you, have a good day." }
+    ]
+  },
+  {
+    "id": "dev.09.benign_it_ticket_callback",
+    "title": "IT service desk follows up on an email ticket",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "Hard negative for tech support scams: the service desk calls back about a ticket the user raised, fixes it server-side and explicitly needs no install or password.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "text": "Hi, it's Marcus from the IT service desk. You logged a ticket about your email not syncing." },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Yes, since this morning." },
+      { "start": 9.5, "end": 18.0, "speaker": "caller", "text": "We found the issue on our side. A mailbox migration ran overnight and a few accounts didn't update." },
+      { "start": 18.5, "end": 26.0, "speaker": "caller", "text": "I've fixed it now. Just close Outlook and reopen it, and it should sync within a few minutes." },
+      { "start": 26.5, "end": 28.0, "speaker": "callee", "text": "Okay, doing that now." },
+      { "start": 28.5, "end": 36.0, "speaker": "caller", "text": "You won't need to install anything or share your password. I'll close the ticket once you confirm." },
+      { "start": 36.5, "end": 39.0, "speaker": "callee", "text": "It's syncing now, thanks." }
+    ]
+  },
+  {
+    "id": "dev.10.benign_parent_bill_payment",
+    "title": "Mother asks her son to pay the electricity bill",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "Hard negative for family emergency scams: a parent openly asks for a routine bill payment, shares it on the family group and says there is no hurry.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 6.0, "speaker": "caller", "text": "Hi beta, it's Amma. Are you free for a minute?" },
+      { "start": 6.5, "end": 8.0, "speaker": "callee", "text": "Yes Amma, tell me." },
+      { "start": 8.5, "end": 17.0, "speaker": "caller", "text": "The electricity bill came today and I can't find the app password. Can you pay it from your phone when you get time?" },
+      { "start": 17.5, "end": 19.3, "speaker": "callee", "text": "Sure, send me a photo of the bill." },
+      { "start": 19.5, "end": 27.0, "speaker": "caller", "text": "Okay, I'll send it on the family group. Also your father says the car service is on Saturday." },
+      { "start": 27.5, "end": 29.0, "speaker": "callee", "text": "Noted. I'll pay it tonight." },
+      { "start": 29.5, "end": 33.0, "speaker": "caller", "text": "No hurry. Eat on time, okay?" }
+    ]
+  },
+  {
+    "id": "dev.11.benign_courier_delivery_code",
+    "title": "Courier asks for the in-app delivery code at handover",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "Hard negative for OTP harvest and parcel scams: a courier at the building asks for the shopping app's handover code only when delivering.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "text": "Hello sir, I'm from the courier company, I have your package from the electronics store." },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Okay, I'm on the second floor." },
+      { "start": 9.5, "end": 17.0, "speaker": "caller", "text": "I'm at the building entrance. The lift is not working, so I'll walk up. Is that fine?" },
+      { "start": 17.5, "end": 19.0, "speaker": "callee", "text": "Yes, come up, flat 204." },
+      { "start": 19.5, "end": 27.0, "speaker": "caller", "text": "When I hand over the box, please read out the delivery code shown in the shopping app, then I'll mark it done." },
+      { "start": 27.5, "end": 29.0, "speaker": "callee", "text": "Sure, I'll keep it ready." },
+      { "start": 29.5, "end": 32.0, "speaker": "caller", "text": "Coming up now, two minutes." }
+    ]
+  },
+  {
+    "id": "dev.12.benign_finance_expense_query",
+    "title": "Finance colleague asks for a clearer expense receipt",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "Hard negative for CEO and vendor fraud: finance asks for a re-upload in the normal portal, with manager approval and payroll timing.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "text": "Hey Arjun, it's Neha from finance. Quick one about your travel expense claim." },
+      { "start": 7.5, "end": 9.0, "speaker": "callee", "text": "Sure, what's up?" },
+      { "start": 9.5, "end": 18.0, "speaker": "caller", "text": "The hotel receipt you uploaded is blurry, so the system rejected it. Could you upload a clearer copy in the portal?" },
+      { "start": 18.5, "end": 20.0, "speaker": "callee", "text": "Oh, okay. I'll do it today." },
+      { "start": 20.5, "end": 29.0, "speaker": "caller", "text": "Thanks. Once it's in, your manager approves it and the reimbursement goes out with the next payroll run." },
+      { "start": 29.5, "end": 31.0, "speaker": "callee", "text": "Great, thanks for letting me know." },
+      { "start": 31.5, "end": 35.0, "speaker": "caller", "text": "No problem, have a good day." }
+    ]
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "fx.07.benign_bank_fraud_alert",
+    "title": "Genuine bank fraud-monitoring call",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "Hard negative for otp_harvest: a real fraud team calls about unusual card activity, states it will never ask for codes, invites callback on the card number, asks yes/no questions, and blocks the card without any request.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 9.0, "speaker": "caller", "text": "Hello, this is Anita from the fraud monitoring team at Northfield Bank. I'm calling about some unusual activity on your debit card. Is now a good time?" },
+      { "start": 9.5, "end": 11.0, "speaker": "callee", "text": "Yes, go ahead." },
+      { "start": 11.5, "end": 21.0, "speaker": "caller", "text": "Before we start, I will not ask for your PIN, passwords or any codes. You are welcome to end this call and phone us back using the number printed on your card.",
+        "claims": [ { "span": "end this call and phone us back using the number printed on your card", "expected": "true", "groundTruthId": "gt.banking.07" } ] },
+      { "start": 21.5, "end": 23.5, "speaker": "callee", "text": "No, it's fine, I can talk." },
+      { "start": 24.0, "end": 33.0, "speaker": "caller", "text": "We saw two attempted purchases last night from an online gaming site, one for forty dollars and one for three hundred. Did you make either of those?" },
+      { "start": 33.5, "end": 35.5, "speaker": "callee", "text": "No, neither of those was me." },
+      { "start": 36.0, "end": 46.0, "speaker": "caller", "text": "Thank you. I've declined both and blocked the card. A new card will be posted to your address on file within a week, and you won't be charged for these." },
+      { "start": 46.5, "end": 48.5, "speaker": "callee", "text": "Great. Do I need to do anything?" },
+      { "start": 49.0, "end": 57.0, "speaker": "caller", "text": "Nothing else for now. You'll see a message in your banking app confirming the block. Is there anything else I can help you with today?" }
+    ]
+  },
+  {
+    "id": "fx.08.benign_furniture_delivery",
+    "title": "Furniture delivery partner at the society gate",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "Hard negative for parcel_customs and otp_harvest: a delivery partner coordinates gate access and the service lift, and mentions an in-app delivery code to be shared only after receiving the item.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "text": "Hello madam, I'm Suresh, the delivery partner for your order from the furniture store. I am near your society gate." },
+      { "start": 7.5, "end": 9.5, "speaker": "callee", "text": "Oh yes, I was expecting it today." },
+      { "start": 10.0, "end": 18.0, "speaker": "caller", "text": "The security guard is saying I need your flat number and a confirmation from you before he lets the van inside." },
+      { "start": 18.5, "end": 21.0, "speaker": "callee", "text": "It's B wing, flat 402. I'll call the guard." },
+      { "start": 21.5, "end": 28.0, "speaker": "caller", "text": "Thank you. It is a big box, so we'll use the service lift. Is the lift working today?" },
+      { "start": 28.5, "end": 30.5, "speaker": "callee", "text": "Yes, the service lift is fine." },
+      { "start": 31.0, "end": 40.0, "speaker": "caller", "text": "Okay madam, I'll be there in five minutes. At the door, the app will show you a delivery code, please share it only after you receive the item." },
+      { "start": 40.5, "end": 42.0, "speaker": "callee", "text": "Sure, see you soon." }
+    ]
+  },
+  {
+    "id": "fx.09.benign_family_surprise_gift",
+    "title": "Daughter organising a surprise birthday dinner",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "en-US",
+    "synopsis": "Hard negative for family_emergency: a daughter calls her father about splitting the cost of a surprise dinner, with a benign 'don't mention it to her' request, explicit no-rush payment, and the plan shared in the family chat.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 5.0, "speaker": "caller", "text": "Hi Dad, it's Emily. Got a second? Nothing's wrong." },
+      { "start": 5.5, "end": 7.5, "speaker": "callee", "text": "Hey sweetheart, sure, what's going on?" },
+      { "start": 8.0, "end": 17.0, "speaker": "caller", "text": "So for Mom's birthday, Josh and I booked the restaurant she likes for the twelfth. We were thinking of splitting the bill three ways with you." },
+      { "start": 17.5, "end": 20.0, "speaker": "callee", "text": "That sounds lovely. Count me in." },
+      { "start": 20.5, "end": 29.0, "speaker": "caller", "text": "It's a surprise, so don't mention it to her yet. I'll put the reservation details and the cost in the family chat without her on it." },
+      { "start": 29.5, "end": 32.0, "speaker": "callee", "text": "My lips are sealed. How much is my share?" },
+      { "start": 32.5, "end": 41.0, "speaker": "caller", "text": "Probably around eighty dollars each. No rush at all, you can send it whenever, or just pay me back at dinner." },
+      { "start": 41.5, "end": 44.0, "speaker": "callee", "text": "I'll send it this weekend. Talk soon, sweetheart." },
+      { "start": 44.5, "end": 47.0, "speaker": "caller", "text": "Thanks Dad. Love you, bye." }
+    ]
+  },
+  {
+    "id": "fx.10.benign_supplier_callback",
+    "title": "Accounts payable verifying a bank-change email by callback",
+    "label": "benign",
+    "family": null,
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "Hard negative for ceo_wire_fraud: an accounts payable clerk receives a bank-change email and correctly calls the supplier on the contract number, confirms it is fake, and keeps paying the account on file.",
+    "onsetTurn": null,
+    "extractionTurn": null,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "text": "Hi Daniel, it's Maria from accounts payable at Crestline. Do you have a couple of minutes about an invoice?" },
+      { "start": 7.5, "end": 9.5, "speaker": "callee", "text": "Sure Maria, go ahead." },
+      { "start": 10.0, "end": 20.0, "speaker": "caller", "text": "We received an email saying your company changed its bank account. Before we update anything, I'm ringing you on the phone number listed in the supplier agreement we signed to check.",
+        "claims": [ { "span": "I'm ringing you on the phone number listed in the supplier agreement we signed to check", "expected": "true", "groundTruthId": "gt.corporate_payments.04" } ] },
+      { "start": 20.5, "end": 24.0, "speaker": "callee", "text": "Good call. We haven't changed banks at all. That email isn't from us." },
+      { "start": 24.5, "end": 33.0, "speaker": "caller", "text": "That's what I suspected. I'll keep paying the account we have on file and forward the email to our security team." },
+      { "start": 33.5, "end": 37.0, "speaker": "callee", "text": "Thanks. I'll warn our team too, someone may be spoofing our domain." },
+      { "start": 37.5, "end": 45.0, "speaker": "caller", "text": "Also, invoice 4471 is approved and scheduled for Friday's payment run, so you should see it early next week." },
+      { "start": 45.5, "end": 47.5, "speaker": "callee", "text": "Perfect, thanks for checking with us." }
+    ]
+  }
+]

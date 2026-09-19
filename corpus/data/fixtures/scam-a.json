@@ -1,0 +1,83 @@
+[
+  {
+    "id": "fx.01.digital_arrest_parcel",
+    "title": "Courier parcel hook escalating to digital arrest",
+    "label": "scam",
+    "family": "digital_arrest",
+    "acceptableFamilies": ["parcel_customs"],
+    "locale": "en-IN",
+    "synopsis": "A fake courier desk claims a parcel booked with the victim's Aadhaar held narcotics, hands off to a fake cyber police inspector who declares digital arrest, forbids telling family, and demands all funds be moved to an 'RBI supervised' account.",
+    "onsetTurn": 2,
+    "extractionTurn": 10,
+    "turns": [
+      { "start": 0.0, "end": 6.5, "speaker": "caller", "stage": "hook", "text": "Hello, this is the customer desk of SkyLink Courier calling for Mrs Kavita Sharma. Am I speaking to her?" },
+      { "start": 7.0, "end": 8.5, "speaker": "callee", "text": "Yes, speaking. What is this about?" },
+      { "start": 9.0, "end": 17.0, "speaker": "caller", "stage": "authority_claim", "text": "Madam, a package booked with your Aadhaar to Cambodia was stopped at Mumbai airport. Customs has found narcotics and four passports in it.",
+        "claims": [ { "span": "Customs has found narcotics and four passports in it", "expected": "false", "groundTruthId": "gt.customs_courier.01" } ] },
+      { "start": 17.5, "end": 20.5, "speaker": "callee", "text": "What? I never sent any parcel to Cambodia." },
+      { "start": 21.0, "end": 30.0, "speaker": "caller", "stage": "authority_claim", "text": "That is why I am transferring you to the Mumbai cyber police. Officer Pradeep will take your statement on a video call. Please do not cut the line." },
+      { "start": 31.0, "end": 41.0, "speaker": "caller", "stage": "isolation", "text": "Madam, this is Inspector Pradeep Kulkarni. Your Aadhaar is linked to a laundering case. As of now you are under digital arrest, and you must keep your video on.",
+        "claims": [ { "span": "you are under digital arrest, and you must keep your video on", "expected": "false", "groundTruthId": "gt.law_enforcement.01" } ] },
+      { "start": 41.5, "end": 44.5, "speaker": "callee", "text": "Arrest? I have done nothing wrong. Should I call my son?" },
+      { "start": 45.0, "end": 55.0, "speaker": "caller", "stage": "isolation", "text": "No. You will not inform your son or anyone. Some suspects are from your family circle. If you tell anyone, you will be booked as an accomplice.",
+        "claims": [ { "span": "If you tell anyone, you will be booked as an accomplice", "expected": "false", "groundTruthId": "gt.law_enforcement.07" } ] },
+      { "start": 55.5, "end": 64.0, "speaker": "caller", "stage": "urgency", "text": "The CBI team is ready to come to your house within one hour. Only your cooperation now can stop that." },
+      { "start": 64.5, "end": 67.0, "speaker": "callee", "text": "Please, what do I have to do?" },
+      { "start": 67.5, "end": 79.0, "speaker": "caller", "stage": "extraction", "text": "For verification, you will move all your funds to the RBI supervised account I share. Once the investigation clears you, the money comes back in two days.",
+        "claims": [ { "span": "you will move all your funds to the RBI supervised account I share", "expected": "false", "groundTruthId": "gt.courts_legal.02" } ] },
+      { "start": 79.5, "end": 82.0, "speaker": "callee", "text": "I have about six lakh in fixed deposit." },
+      { "start": 82.5, "end": 91.0, "speaker": "caller", "stage": "extraction", "text": "Break the fixed deposit today and send it by RTGS. Stay on video while you go to the bank, and tell the bank manager it is for a property purchase.",
+        "claims": [ { "span": "tell the bank manager it is for a property purchase", "expected": "false", "groundTruthId": "gt.romance_investment.03" } ] }
+    ]
+  },
+  {
+    "id": "fx.02.otp_harvest_card_alert",
+    "title": "Fake card-security call harvesting an OTP",
+    "label": "scam",
+    "family": "otp_harvest",
+    "acceptableFamilies": [],
+    "locale": "en-IN",
+    "synopsis": "Caller poses as the bank's card security team, reports a fake online purchase, discourages using the banking app, and asks the victim to read out the 'cancellation' OTP, dismissing the SMS warning.",
+    "onsetTurn": 5,
+    "extractionTurn": 7,
+    "turns": [
+      { "start": 0.0, "end": 8.5, "speaker": "caller", "stage": "hook", "text": "Good evening sir, I am calling from the card security team of your bank. There is a transaction of thirty-two thousand rupees on your credit card at an online electronics store." },
+      { "start": 9.0, "end": 11.0, "speaker": "callee", "text": "No, I didn't buy anything." },
+      { "start": 11.5, "end": 20.5, "speaker": "caller", "stage": "authority_claim", "text": "Okay sir, don't worry, I have put the transaction on hold. For security, your card ending in eight eight two one is registered to your name, correct?" },
+      { "start": 21.0, "end": 22.5, "speaker": "callee", "text": "Yes, that's my card." },
+      { "start": 23.0, "end": 32.0, "speaker": "caller", "stage": "urgency", "text": "The payment will go through automatically in fifteen minutes unless we cancel it from our side, so we need to complete the cancellation quickly." },
+      { "start": 32.5, "end": 40.0, "speaker": "caller", "stage": "isolation", "text": "Please don't use the mobile banking app right now, the hacker can see your login and will take the rest of the money." },
+      { "start": 40.5, "end": 43.0, "speaker": "callee", "text": "Okay. What do you need from me?" },
+      { "start": 43.5, "end": 52.0, "speaker": "caller", "stage": "extraction", "text": "You will get a six digit code from the bank for the cancellation. Just tell me the code when it comes.",
+        "claims": [ { "span": "Just tell me the code when it comes", "expected": "false", "groundTruthId": "gt.banking.02" } ] },
+      { "start": 52.5, "end": 56.0, "speaker": "callee", "text": "The message says do not share this OTP with anyone." },
+      { "start": 56.5, "end": 64.0, "speaker": "caller", "stage": "extraction", "text": "Yes sir, that's standard, it is for outsiders. I am the bank itself, so it is safe to tell me.",
+        "claims": [ { "span": "I am the bank itself, so it is safe to tell me", "expected": "false", "groundTruthId": "gt.banking.02" } ] }
+    ]
+  },
+  {
+    "id": "fx.03.ceo_voice_clone_wire",
+    "title": "Cloned executive voice requesting an off-system wire",
+    "label": "scam",
+    "family": "ceo_wire_fraud",
+    "acceptableFamilies": [],
+    "locale": "global",
+    "synopsis": "A caller using the CEO's voice asks a finance manager to release an acquisition deposit outside the payment system, to exclude the approver, and to send it within half an hour to an IBAN texted from a personal phone.",
+    "onsetTurn": 4,
+    "extractionTurn": 9,
+    "turns": [
+      { "start": 0.0, "end": 6.0, "speaker": "caller", "stage": "hook", "text": "Hey Sarah, it's Richard. You got a minute? I'm at the airport, boarding soon." },
+      { "start": 6.5, "end": 8.5, "speaker": "callee", "text": "Hi Richard, sure, what's up?" },
+      { "start": 9.0, "end": 19.0, "speaker": "caller", "stage": "authority_claim", "text": "We're closing the Halvorsen acquisition today. The board signed off this morning, but nobody outside the deal team can know yet, the announcement is Monday." },
+      { "start": 19.5, "end": 21.5, "speaker": "callee", "text": "Okay, congratulations. How can I help?" },
+      { "start": 22.0, "end": 31.0, "speaker": "caller", "stage": "authority_claim", "text": "I need you to release the deposit to their escrow agent. It won't be in the payment system, legal is handling it off the books until the announcement.",
+        "claims": [ { "span": "It won't be in the payment system", "expected": "false", "groundTruthId": "gt.corporate_payments.01" } ] },
+      { "start": 31.5, "end": 35.0, "speaker": "callee", "text": "Normally Mark has to approve anything over fifty thousand." },
+      { "start": 35.5, "end": 44.0, "speaker": "caller", "stage": "isolation", "text": "Don't bring Mark into it, he's not cleared on this deal. I'm authorising it myself, and I'll sort the paperwork with him next week." },
+      { "start": 44.5, "end": 52.0, "speaker": "caller", "stage": "urgency", "text": "The escrow window shuts at two o'clock, so it has to go in the next half hour or we lose the deal." },
+      { "start": 52.5, "end": 55.0, "speaker": "callee", "text": "How much, and where is it going?" },
+      { "start": 55.5, "end": 66.0, "speaker": "caller", "stage": "extraction", "text": "Three hundred eighty thousand euros. I'm texting you the IBAN now from my personal phone, my work email isn't syncing, so just reply to the text when it's sent.",
+        "claims": [ { "span": "my work email isn't syncing", "expected": "unverifiable" } ] }
+    ]
+  }
+]

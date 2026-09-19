@@ -1,0 +1,82 @@
+[
+  {
+    "id": "fx.04.tech_support_cold_call",
+    "title": "Cold-call 'Windows security centre' remote access scam",
+    "label": "scam",
+    "family": "tech_support",
+    "acceptableFamilies": [],
+    "locale": "en-US",
+    "synopsis": "Unsolicited caller claims servers detected a Trojan, uses Event Viewer errors as proof, discourages calling the bank or family, and gets the victim to install remote-access software and pay while connected.",
+    "onsetTurn": 2,
+    "extractionTurn": 8,
+    "turns": [
+      { "start": 0.0, "end": 7.0, "speaker": "caller", "stage": "hook", "text": "Hello, am I speaking with the owner of the computer at this address? This is Kevin from the Windows security centre." },
+      { "start": 7.5, "end": 9.5, "speaker": "callee", "text": "Uh, yes. Is something wrong?" },
+      { "start": 10.0, "end": 19.0, "speaker": "caller", "stage": "hook", "text": "Our servers are getting warning signals from your machine. Someone has put a Trojan on it and they are stealing information while we speak.",
+        "claims": [ { "span": "Our servers are getting warning signals from your machine", "expected": "false", "groundTruthId": "gt.tech_support.01" } ] },
+      { "start": 19.5, "end": 22.0, "speaker": "callee", "text": "Oh no. I did notice it's been slow." },
+      { "start": 22.5, "end": 32.0, "speaker": "caller", "stage": "authority_claim", "text": "Press the Windows key and R, then type event viewer. See all those red errors? Each one is a hacker trying to get in." },
+      { "start": 32.5, "end": 41.0, "speaker": "caller", "stage": "isolation", "text": "Please don't phone your bank or your son about this yet. If the hackers notice, they will lock you out of everything." },
+      { "start": 41.5, "end": 49.0, "speaker": "caller", "stage": "urgency", "text": "We need to secure the computer within five minutes, before they reach your online banking." },
+      { "start": 49.5, "end": 52.0, "speaker": "callee", "text": "Okay, tell me what to do." },
+      { "start": 52.5, "end": 63.0, "speaker": "caller", "stage": "extraction", "text": "Open your browser and go to the site I will spell for you, download the helper, and read me the nine digit ID it shows so our engineer can connect.",
+        "claims": [ { "span": "read me the nine digit ID it shows so our engineer can connect", "expected": "false", "groundTruthId": "gt.tech_support.02" } ] },
+      { "start": 63.5, "end": 72.0, "speaker": "caller", "stage": "extraction", "text": "After the cleaning, the lifetime protection is three hundred forty-nine dollars, which you can pay by logging into your bank while I'm connected." }
+    ]
+  },
+  {
+    "id": "fx.05.family_emergency_grandson",
+    "title": "Voice-cloned grandson in a car accident, cash bail courier",
+    "label": "scam",
+    "family": "family_emergency",
+    "acceptableFamilies": [],
+    "locale": "en-US",
+    "synopsis": "A cloned grandson voice claims a crash and arrest and asks for secrecy; a fake attorney invokes a gag order, sets a bail deadline and sends a courier to collect cash, then blocks calling the grandson.",
+    "onsetTurn": 4,
+    "extractionTurn": 9,
+    "turns": [
+      { "start": 0.0, "end": 5.0, "speaker": "caller", "stage": "hook", "text": "Grandma? Hey, it's me. I'm okay, but I really messed up." },
+      { "start": 5.5, "end": 7.5, "speaker": "callee", "text": "Jacob? Is that you? You sound strange." },
+      { "start": 8.0, "end": 16.0, "speaker": "caller", "stage": "hook", "text": "I've got a cold and I was crying. I hit a car on the way back from a party and the police took me in." },
+      { "start": 16.5, "end": 18.5, "speaker": "callee", "text": "Oh my God, are you hurt?" },
+      { "start": 19.0, "end": 26.0, "speaker": "caller", "stage": "isolation", "text": "I'm fine, but please don't call Mom. She'll lose it. Can you just help me and keep it between us?" },
+      { "start": 27.0, "end": 37.0, "speaker": "caller", "stage": "authority_claim", "text": "Hello ma'am, my name is Gary Collins, I'm the attorney representing your grandson. The other driver was a pregnant woman, and he's facing serious charges." },
+      { "start": 37.5, "end": 46.0, "speaker": "caller", "stage": "isolation", "text": "There's a court gag order in place, so please don't discuss this case with anyone, including his parents, or it could affect the outcome.",
+        "claims": [ { "span": "There's a court gag order in place", "expected": "false", "groundTruthId": "gt.courts_legal.03" } ] },
+      { "start": 46.5, "end": 54.0, "speaker": "caller", "stage": "urgency", "text": "The judge can release him today if bail is posted before four o'clock. Otherwise he stays in jail through the weekend." },
+      { "start": 54.5, "end": 57.0, "speaker": "callee", "text": "How much is it? How do I pay?" },
+      { "start": 57.5, "end": 68.0, "speaker": "caller", "stage": "extraction", "text": "It's nine thousand dollars in cash. We'll send a courier to your home in an hour to collect it. Please put it in an envelope, sealed.",
+        "claims": [ { "span": "We'll send a courier to your home in an hour to collect it", "expected": "false", "groundTruthId": "gt.family_verification.04" } ] },
+      { "start": 68.5, "end": 72.0, "speaker": "callee", "text": "Can I talk to Jacob again first?" },
+      { "start": 72.5, "end": 80.0, "speaker": "caller", "stage": "isolation", "text": "He's back in the holding cell now, ma'am. He can't take calls, and his phone is in evidence, so don't try calling it.",
+        "claims": [ { "span": "his phone is in evidence, so don't try calling it", "expected": "false", "groundTruthId": "gt.family_verification.02" } ] }
+    ]
+  },
+  {
+    "id": "fx.06.kyc_expiry_remote_app",
+    "title": "Bank KYC 'new RBI norms' call pushing a screen-sharing app",
+    "label": "scam",
+    "family": "kyc_expiry",
+    "acceptableFamilies": ["otp_harvest", "tech_support"],
+    "locale": "en-IN",
+    "synopsis": "Caller from a 'KYC verification cell' says KYC is outdated under new RBI norms, threatens card and net banking shutdown tonight, talks the victim out of visiting the branch, and gets a screen-sharing app installed to capture codes and banking credentials.",
+    "onsetTurn": 2,
+    "extractionTurn": 7,
+    "turns": [
+      { "start": 0.0, "end": 8.0, "speaker": "caller", "stage": "hook", "text": "Namaste sir, I am Rohit calling from the KYC verification cell of your bank. Your account KYC is not updated as per the new RBI norms.",
+        "claims": [ { "span": "Your account KYC is not updated as per the new RBI norms", "expected": "false", "groundTruthId": "gt.banking.01" } ] },
+      { "start": 8.5, "end": 10.5, "speaker": "callee", "text": "I updated it last year at the branch." },
+      { "start": 11.0, "end": 20.0, "speaker": "caller", "stage": "urgency", "text": "Sir, that was the old format. Under the new rule it must be re-done, and your debit card and net banking will stop working from tonight." },
+      { "start": 20.5, "end": 22.5, "speaker": "callee", "text": "Then I will go to the branch tomorrow." },
+      { "start": 23.0, "end": 32.0, "speaker": "caller", "stage": "isolation", "text": "Sir, the branch will not be able to do this online update, they will only send you back to us. I can finish it with you in five minutes." },
+      { "start": 32.5, "end": 40.0, "speaker": "caller", "stage": "isolation", "text": "Please do not disconnect, if the call drops the request is cancelled and the account freeze gets applied." },
+      { "start": 40.5, "end": 42.0, "speaker": "callee", "text": "Okay, what do I do?" },
+      { "start": 42.5, "end": 52.0, "speaker": "caller", "stage": "extraction", "text": "I am sending you a link for the bank's KYC support app. Install it and press allow on the screen sharing permission so I can see the steps.",
+        "claims": [ { "span": "press allow on the screen sharing permission so I can see the steps", "expected": "false", "groundTruthId": "gt.tech_support.02" } ] },
+      { "start": 52.5, "end": 55.0, "speaker": "callee", "text": "It's installed. It is asking for permission." },
+      { "start": 55.5, "end": 64.0, "speaker": "caller", "stage": "extraction", "text": "Good, allow it. Now a code will come by SMS, just keep it open on the screen, you don't even need to read it to me." },
+      { "start": 64.5, "end": 72.0, "speaker": "caller", "stage": "extraction", "text": "To confirm you are the account holder, open net banking and enter your login and transaction password on the page I show you.",
+        "claims": [ { "span": "enter your login and transaction password on the page I show you", "expected": "false", "groundTruthId": "gt.banking.05" } ] }
+    ]
+  }
+]
