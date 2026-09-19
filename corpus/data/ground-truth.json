@@ -1,0 +1,352 @@
+[
+  {
+    "id": "gt.law_enforcement.01", "topic": "law_enforcement", "locale": "en-IN", "stance": "refutes",
+    "claim": "You are under digital arrest and must remain on this video call until the investigation is finished.",
+    "fact": "There is no procedure called digital arrest in Indian law. Police, CBI, ED and narcotics officers do not arrest or interrogate people over video calls, and the government has repeatedly warned the public that such calls are fraud.",
+    "families": ["digital_arrest", "parcel_customs"],
+    "source": { "publisher": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs", "title": "Public awareness advisories on digital arrest fraud", "url": "https://i4c.mha.gov.in/" }
+  },
+  {
+    "id": "gt.law_enforcement.02", "topic": "law_enforcement", "locale": "en-IN", "stance": "refutes",
+    "claim": "A central agency officer will record your statement and take your deposition over WhatsApp video right now.",
+    "fact": "Investigating agencies issue a written notice to appear, and statements are recorded in person. They do not demand statements through surprise WhatsApp or Skype video calls.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs", "title": "Public awareness advisories on digital arrest fraud", "url": "https://i4c.mha.gov.in/" }
+  },
+  {
+    "id": "gt.law_enforcement.03", "topic": "law_enforcement", "locale": "en-IN", "stance": "refutes",
+    "claim": "Do not go to your local police station, they have no authority over this central agency case.",
+    "fact": "You can always verify a caller's claims with your local police or by dialling 112. Cyber fraud can be reported on the national helpline 1930 or at cybercrime.gov.in.",
+    "families": ["digital_arrest", "parcel_customs"],
+    "source": { "publisher": "National Cyber Crime Reporting Portal, Government of India", "title": "Report cyber crime / helpline 1930", "url": "https://cybercrime.gov.in/" }
+  },
+  {
+    "id": "gt.law_enforcement.04", "topic": "law_enforcement", "locale": "en-IN", "stance": "refutes",
+    "claim": "The arrest warrant and the FIR copy with the official seal are being sent to you on WhatsApp.",
+    "fact": "Warrants and FIRs are not served through WhatsApp messages. Documents sent by a caller over chat apps are easily forged and prove nothing about a real case.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs", "title": "Public awareness advisories on digital arrest fraud", "url": "https://i4c.mha.gov.in/" }
+  },
+  {
+    "id": "gt.law_enforcement.05", "topic": "law_enforcement", "locale": "en-IN", "stance": "supports",
+    "claim": "Your stolen phone has been traced and recovered, please come to the police station with identity proof to collect it.",
+    "fact": "Genuine police follow-ups relate to a complaint you filed, such as a lost or stolen phone blocked through CEIR, and ask you to visit in person with ID. They do not ask for payment over the phone.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Department of Telecommunications, Sanchar Saathi", "title": "CEIR: block and trace lost or stolen mobile", "url": "https://sancharsaathi.gov.in/" }
+  },
+  {
+    "id": "gt.law_enforcement.06", "topic": "law_enforcement", "locale": "en-US", "stance": "refutes",
+    "claim": "You missed jury duty and there is a warrant for your arrest unless you pay the fine over the phone now.",
+    "fact": "Federal courts state that calls threatening prosecution, fines or jail for failing to serve on a jury are fraudulent. Most court contact with jurors is by mail, and real court officials never request sensitive information by phone or email.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Administrative Office of the U.S. Courts", "title": "Juror Scams", "url": "https://www.uscourts.gov/court-programs/jury-service/juror-scams" }
+  },
+  {
+    "id": "gt.law_enforcement.07", "topic": "law_enforcement", "locale": "global", "stance": "refutes",
+    "claim": "This investigation is confidential, so do not tell any family member or you will be charged as well.",
+    "fact": "No law bars you from telling your family or a lawyer that someone claiming to be police contacted you. Demands for secrecy on a phone call are a hallmark of impersonation fraud.",
+    "families": ["digital_arrest", "parcel_customs", "family_emergency"],
+    "source": { "publisher": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs", "title": "Public awareness advisories on digital arrest fraud", "url": "https://i4c.mha.gov.in/" }
+  },
+  {
+    "id": "gt.courts_legal.01", "topic": "courts_legal", "locale": "en-IN", "stance": "refutes",
+    "claim": "You are connected to a virtual court hearing and the judge will decide your bail during this call.",
+    "fact": "Courts do not hold surprise hearings for citizens over phone or WhatsApp video without a formal summons, and bail is never paid into a private bank account on a caller's instruction.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs", "title": "Public awareness advisories on digital arrest fraud", "url": "https://i4c.mha.gov.in/" }
+  },
+  {
+    "id": "gt.courts_legal.02", "topic": "courts_legal", "locale": "global", "stance": "refutes",
+    "claim": "Transfer your savings to the verification account and the full amount will be refunded after the investigation.",
+    "fact": "No court, police force or regulator asks citizens to transfer money for verification or safe custody. Money sent to such accounts goes to criminals and is rarely recovered.",
+    "families": ["digital_arrest", "parcel_customs"],
+    "source": { "publisher": "Indian Cyber Crime Coordination Centre (I4C), Ministry of Home Affairs", "title": "Public awareness advisories on digital arrest fraud", "url": "https://i4c.mha.gov.in/" }
+  },
+  {
+    "id": "gt.courts_legal.03", "topic": "courts_legal", "locale": "en-US", "stance": "refutes",
+    "claim": "There is a gag order, so you are not allowed to discuss your grandson's arrest with anyone in the family.",
+    "fact": "Relatives are not placed under gag orders by a phone call. The recommended step is to hang up and call your family member, or another relative, on a number you already know.",
+    "families": ["family_emergency"],
+    "source": { "publisher": "Federal Trade Commission", "title": "Scammers use AI to enhance their family emergency schemes", "url": "https://consumer.ftc.gov/" }
+  },
+  {
+    "id": "gt.customs_courier.01", "topic": "customs_courier", "locale": "en-IN", "stance": "refutes",
+    "claim": "Customs found drugs and fake passports in a parcel booked in your name, so you must give a statement on this call.",
+    "fact": "Customs does not phone individuals about seized parcels to demand statements or payments. Calls claiming contraband was found in a parcel in your name are a common opening for digital arrest fraud.",
+    "families": ["parcel_customs", "digital_arrest"],
+    "source": { "publisher": "Central Board of Indirect Taxes and Customs", "title": "Public caution on fraudulent calls in the name of Customs", "url": "https://www.cbic.gov.in/" }
+  },
+  {
+    "id": "gt.customs_courier.02", "topic": "customs_courier", "locale": "en-IN", "stance": "refutes",
+    "claim": "Pay the customs duty to this UPI ID and your parcel will be released immediately.",
+    "fact": "Customs duty is paid through official government payment channels against a formal notice, never to a personal UPI ID or bank account given by a caller.",
+    "families": ["parcel_customs"],
+    "source": { "publisher": "Central Board of Indirect Taxes and Customs", "title": "Public caution on fraudulent calls in the name of Customs", "url": "https://www.cbic.gov.in/" }
+  },
+  {
+    "id": "gt.customs_courier.03", "topic": "customs_courier", "locale": "global", "stance": "refutes",
+    "claim": "If this call gets disconnected, the system will automatically mark you as absconding.",
+    "fact": "No courier, customs or police system flags a person as a fugitive for ending a phone call. You can hang up and verify through the organisation's official website or helpline.",
+    "families": ["parcel_customs", "digital_arrest", "kyc_expiry"],
+    "source": { "publisher": "National Cyber Crime Reporting Portal, Government of India", "title": "Report cyber crime / helpline 1930", "url": "https://cybercrime.gov.in/" }
+  },
+  {
+    "id": "gt.customs_courier.04", "topic": "customs_courier", "locale": "global", "stance": "supports",
+    "claim": "I have your parcel here, the building gate is closed, so where should I bring it or can I hand it to the guard?",
+    "fact": "A delivery person asking about access or where to leave a parcel you ordered, without asking for payment, bank details or urgency, shows none of the warning signs of a scam.",
+    "families": ["parcel_customs"],
+    "source": { "publisher": "Federal Trade Commission", "title": "How To Avoid a Scam", "url": "https://consumer.ftc.gov/articles/how-avoid-scam" }
+  },
+  {
+    "id": "gt.customs_courier.05", "topic": "customs_courier", "locale": "en-IN", "stance": "refutes",
+    "claim": "Your Speed Post parcel is on hold, so open the link in the SMS and pay the small redelivery charge.",
+    "fact": "India Post does not send SMS links asking customers to update addresses or pay redelivery fees. Such links lead to phishing pages that steal card details.",
+    "families": ["parcel_customs"],
+    "source": { "publisher": "India Post", "title": "Caution against fraudulent messages in the name of India Post", "url": "https://www.indiapost.gov.in/" }
+  },
+  {
+    "id": "gt.banking.01", "topic": "banking", "locale": "en-IN", "stance": "refutes",
+    "claim": "Your bank KYC has expired and the account will be blocked today unless you update it with me on this call.",
+    "fact": "The RBI has cautioned that fraudsters use KYC updation calls, messages and links to steal details. Banks do not update KYC through unsolicited calls; approach your branch or the bank's official channels.",
+    "families": ["kyc_expiry"],
+    "source": { "publisher": "Reserve Bank of India", "title": "RBI cautions against frauds in the name of KYC updation", "url": "https://www.rbi.org.in/" }
+  },
+  {
+    "id": "gt.banking.02", "topic": "banking", "locale": "global", "stance": "refutes",
+    "claim": "Read out the OTP you just received so that I can verify your identity for the bank.",
+    "fact": "Banks never ask customers to share an OTP, PIN, CVV or password over a call. An OTP authorises a transaction or account change, and anyone asking for it is attempting fraud.",
+    "families": ["otp_harvest", "kyc_expiry"],
+    "source": { "publisher": "Reserve Bank of India", "title": "RBI Kehta Hai: never share OTP, PIN or card details", "url": "https://rbikehtahai.rbi.org.in/" }
+  },
+  {
+    "id": "gt.banking.03", "topic": "banking", "locale": "global", "stance": "refutes",
+    "claim": "Don't call the number on the back of your card, those bank lines have been compromised by criminals.",
+    "fact": "The number printed on your card or on the bank's official website is the safest way to check a call. Fraud-prevention guidance tells customers to hang up and call back on that number.",
+    "families": ["otp_harvest"],
+    "source": { "publisher": "Take Five to Stop Fraud (UK Finance)", "title": "Take Five: stop, challenge, protect", "url": "https://www.takefive-stopfraud.org.uk/" }
+  },
+  {
+    "id": "gt.banking.04", "topic": "banking", "locale": "en-GB", "stance": "refutes",
+    "claim": "Move your savings into a safe account we have created in your name to protect it from the fraudsters.",
+    "fact": "Your bank or the police will never ask you to move money to a so-called safe account. Safe account requests are one of the most common forms of authorised push payment fraud.",
+    "families": ["otp_harvest", "digital_arrest"],
+    "source": { "publisher": "Take Five to Stop Fraud (UK Finance)", "title": "Take Five: stop, challenge, protect", "url": "https://www.takefive-stopfraud.org.uk/" }
+  },
+  {
+    "id": "gt.banking.05", "topic": "banking", "locale": "global", "stance": "refutes",
+    "claim": "Enter your debit card number and ATM PIN on this page to confirm that you are the real account holder.",
+    "fact": "No bank asks customers to type an ATM PIN into a web page or tell it to staff. A PIN is used only at ATMs and card terminals, and pages asking for it are phishing.",
+    "families": ["kyc_expiry", "otp_harvest"],
+    "source": { "publisher": "Reserve Bank of India", "title": "RBI Kehta Hai: never share OTP, PIN or card details", "url": "https://rbikehtahai.rbi.org.in/" }
+  },
+  {
+    "id": "gt.banking.06", "topic": "banking", "locale": "global", "stance": "supports",
+    "claim": "If you did not make this purchase press two and we will block the card, and remember we will never ask for your PIN.",
+    "fact": "Genuine bank fraud alerts ask you to confirm or deny a transaction and may block a card, but they never request OTPs, PINs, passwords or money transfers.",
+    "families": ["otp_harvest"],
+    "source": { "publisher": "Reserve Bank of India", "title": "RBI Kehta Hai: never share OTP, PIN or card details", "url": "https://rbikehtahai.rbi.org.in/" }
+  },
+  {
+    "id": "gt.banking.07", "topic": "banking", "locale": "global", "stance": "supports",
+    "claim": "If you're not sure this call is from us, hang up and call the number on the back of your card.",
+    "fact": "Inviting you to end the call and verify through a number you already trust is exactly what banks and fraud-prevention campaigns recommend.",
+    "families": ["otp_harvest", "kyc_expiry"],
+    "source": { "publisher": "Take Five to Stop Fraud (UK Finance)", "title": "Take Five: stop, challenge, protect", "url": "https://www.takefive-stopfraud.org.uk/" }
+  },
+  {
+    "id": "gt.banking.08", "topic": "banking", "locale": "en-IN", "stance": "refutes",
+    "claim": "Your balance will be moved to the RBI unclaimed deposit fund at midnight if you don't finish KYC now.",
+    "fact": "Deposits are treated as unclaimed only after many years of inactivity, not because of a missed KYC call, and they remain claimable. The RBI UDGAM portal lets people search for them.",
+    "families": ["kyc_expiry"],
+    "source": { "publisher": "Reserve Bank of India", "title": "UDGAM: centralised portal for unclaimed deposits", "url": "https://udgam.rbi.org.in/" }
+  },
+  {
+    "id": "gt.payments_upi.01", "topic": "payments_upi", "locale": "en-IN", "stance": "refutes",
+    "claim": "Enter your UPI PIN to receive the refund into your bank account.",
+    "fact": "A UPI PIN is needed only to send money or check your balance. You never need to enter your PIN or scan a QR code to receive money.",
+    "families": ["otp_harvest", "parcel_customs"],
+    "source": { "publisher": "National Payments Corporation of India", "title": "UPI safety awareness", "url": "https://www.npci.org.in/" }
+  },
+  {
+    "id": "gt.payments_upi.02", "topic": "payments_upi", "locale": "en-IN", "stance": "refutes",
+    "claim": "Approve the collect request I have sent so that your cashback gets credited.",
+    "fact": "Approving a UPI collect request debits your account and pays the requester. Cashback and refunds are credited without any approval or PIN from you.",
+    "families": ["otp_harvest"],
+    "source": { "publisher": "National Payments Corporation of India", "title": "UPI safety awareness", "url": "https://www.npci.org.in/" }
+  },
+  {
+    "id": "gt.payments_upi.03", "topic": "payments_upi", "locale": "en-IN", "stance": "refutes",
+    "claim": "Scan this QR code to receive the payment for the item you are selling.",
+    "fact": "Scanning a QR code is used to pay, not to receive money. Sellers receive UPI payments without scanning anything or entering a PIN.",
+    "families": ["otp_harvest", "parcel_customs"],
+    "source": { "publisher": "National Payments Corporation of India", "title": "UPI safety awareness", "url": "https://www.npci.org.in/" }
+  },
+  {
+    "id": "gt.payments_upi.04", "topic": "payments_upi", "locale": "global", "stance": "refutes",
+    "claim": "The fee can be paid with gift cards, just buy them and send me the codes.",
+    "fact": "No government agency or legitimate business demands gift cards as payment for fines, taxes, bail or fees. Anyone asking you to pay with gift card codes is a scammer.",
+    "families": ["tech_support", "ceo_wire_fraud", "romance_advance_fee", "family_emergency"],
+    "source": { "publisher": "Federal Trade Commission", "title": "Gift card scams", "url": "https://consumer.ftc.gov/" }
+  },
+  {
+    "id": "gt.telecom.01", "topic": "telecom", "locale": "en-IN", "stance": "refutes",
+    "claim": "TRAI will disconnect your mobile number in two hours because of illegal activity on it.",
+    "fact": "TRAI has stated that it does not send messages or make calls to customers about disconnecting mobile numbers. Suspected fraud calls can be reported on the Sanchar Saathi Chakshu facility.",
+    "families": ["digital_arrest", "kyc_expiry"],
+    "source": { "publisher": "Telecom Regulatory Authority of India", "title": "Caution against fraudulent calls about mobile number disconnection", "url": "https://www.trai.gov.in/" }
+  },
+  {
+    "id": "gt.telecom.02", "topic": "telecom", "locale": "en-IN", "stance": "refutes",
+    "claim": "Your SIM card KYC is incomplete and the SIM will be blocked today unless you share the code we send.",
+    "fact": "Operators do SIM re-verification in store with original ID and never ask for codes over a call. Sharing such a code can let fraudsters swap or port your number.",
+    "families": ["kyc_expiry", "otp_harvest"],
+    "source": { "publisher": "Department of Telecommunications, Sanchar Saathi", "title": "Chakshu: report suspected fraud communication", "url": "https://sancharsaathi.gov.in/" }
+  },
+  {
+    "id": "gt.telecom.03", "topic": "telecom", "locale": "global", "stance": "supports",
+    "claim": "About the broadband complaint you logged yesterday, a technician can come to your home tomorrow morning.",
+    "fact": "A follow-up to a complaint you raised, scheduling an in-person visit with no payment, remote access or pressure, shows none of the standard signs of a scam.",
+    "families": ["tech_support"],
+    "source": { "publisher": "Federal Trade Commission", "title": "How To Avoid a Scam", "url": "https://consumer.ftc.gov/articles/how-avoid-scam" }
+  },
+  {
+    "id": "gt.tax_government.01", "topic": "tax_government", "locale": "en-US", "stance": "refutes",
+    "claim": "This is the IRS, you owe back taxes and you will be arrested today unless you pay immediately.",
+    "fact": "The IRS does not call demanding immediate payment by gift card, prepaid card or wire transfer, and does not threaten to bring in police to arrest people for not paying.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Internal Revenue Service", "title": "Tax scams and consumer alerts", "url": "https://www.irs.gov/" }
+  },
+  {
+    "id": "gt.tax_government.02", "topic": "tax_government", "locale": "en-US", "stance": "refutes",
+    "claim": "Your Social Security number has been suspended because of suspicious criminal activity.",
+    "fact": "Social Security numbers are not suspended. The Social Security Administration does not threaten arrest over the phone or demand payment by gift card, wire, cryptocurrency or cash.",
+    "families": ["digital_arrest"],
+    "source": { "publisher": "Social Security Administration, Office of the Inspector General", "title": "Social Security impersonation scams", "url": "https://oig.ssa.gov/" }
+  },
+  {
+    "id": "gt.tax_government.03", "topic": "tax_government", "locale": "en-IN", "stance": "refutes",
+    "claim": "Your PAN card will be deactivated today, so share your bank and card details on this call to keep it active.",
+    "fact": "The Income Tax Department does not ask for PINs, passwords or card details by phone or email. Suspicious messages in its name can be reported through its phishing reporting channel.",
+    "families": ["kyc_expiry"],
+    "source": { "publisher": "Income Tax Department, Government of India", "title": "Report phishing", "url": "https://www.incometax.gov.in/" }
+  },
+  {
+    "id": "gt.tech_support.01", "topic": "tech_support", "locale": "global", "stance": "refutes",
+    "claim": "Microsoft detected a virus on your computer and our technician is calling you to fix it.",
+    "fact": "Microsoft does not send unsolicited messages or make unsolicited phone calls to request personal or financial information or to provide technical support to fix your computer.",
+    "families": ["tech_support"],
+    "source": { "publisher": "Microsoft", "title": "Protect yourself from tech support scams", "url": "https://support.microsoft.com/" }
+  },
+  {
+    "id": "gt.tech_support.02", "topic": "tech_support", "locale": "global", "stance": "refutes",
+    "claim": "Download this support tool and give me the access code so that I can remove the hackers.",
+    "fact": "Remote access tools give a stranger full control of your computer. Legitimate companies do not cold-call you to fix your device, so never grant access to an unexpected caller.",
+    "families": ["tech_support", "kyc_expiry"],
+    "source": { "publisher": "Federal Trade Commission", "title": "How To Spot, Avoid, and Report Tech Support Scams", "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams" }
+  },
+  {
+    "id": "gt.tech_support.03", "topic": "tech_support", "locale": "global", "stance": "refutes",
+    "claim": "The security warning on your screen is real, so do not restart the computer or you will lose your files.",
+    "fact": "Pop-up warnings that tell you to call a phone number are fake. Real security warnings never ask you to call someone, and closing the browser or restarting is safe.",
+    "families": ["tech_support"],
+    "source": { "publisher": "Federal Trade Commission", "title": "How To Spot, Avoid, and Report Tech Support Scams", "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams" }
+  },
+  {
+    "id": "gt.tech_support.04", "topic": "tech_support", "locale": "global", "stance": "refutes",
+    "claim": "We refunded you far too much by mistake, so you need to send the difference back to us.",
+    "fact": "In refund scams the caller fakes an overpayment, often by moving your own money between your accounts, and then asks you to return it through gift cards or transfers.",
+    "families": ["tech_support"],
+    "source": { "publisher": "Federal Trade Commission", "title": "How To Spot, Avoid, and Report Tech Support Scams", "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams" }
+  },
+  {
+    "id": "gt.tech_support.05", "topic": "tech_support", "locale": "global", "stance": "supports",
+    "claim": "You don't have to install any software, just bring the laptop to the help desk for your ticket.",
+    "fact": "Support that you contacted first, which asks for no remote access, payment or personal information, matches the guidance to use only tech support you sought out yourself.",
+    "families": ["tech_support"],
+    "source": { "publisher": "Federal Trade Commission", "title": "How To Spot, Avoid, and Report Tech Support Scams", "url": "https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams" }
+  },
+  {
+    "id": "gt.corporate_payments.01", "topic": "corporate_payments", "locale": "global", "stance": "refutes",
+    "claim": "The CEO needs this confidential wire sent today and it cannot go through the normal approval process.",
+    "fact": "Business email compromise relies on urgent, secret payment requests that bypass approval controls. Verify any payment request by calling the executive on a known number, not one supplied in the request.",
+    "families": ["ceo_wire_fraud"],
+    "source": { "publisher": "Federal Bureau of Investigation", "title": "Business Email Compromise", "url": "https://www.fbi.gov/" }
+  },
+  {
+    "id": "gt.corporate_payments.02", "topic": "corporate_payments", "locale": "global", "stance": "refutes",
+    "claim": "Our company has changed banks, so please send this week's payments to our new account details.",
+    "fact": "Mandate fraud tricks businesses into changing a payee's bank details. Confirm any change by contacting the supplier using details you already hold, never those in the request.",
+    "families": ["ceo_wire_fraud"],
+    "source": { "publisher": "Action Fraud (UK National Fraud and Cyber Crime Reporting Centre)", "title": "Mandate fraud", "url": "https://www.actionfraud.police.uk/" }
+  },
+  {
+    "id": "gt.corporate_payments.03", "topic": "corporate_payments", "locale": "global", "stance": "refutes",
+    "claim": "Buy gift cards for the client event and send me photos of the codes on the back.",
+    "fact": "Requests that appear to come from a boss to buy gift cards and send the codes are a common impersonation scam. Businesses do not pay clients or vendors with photographed gift card codes.",
+    "families": ["ceo_wire_fraud"],
+    "source": { "publisher": "Federal Trade Commission", "title": "Gift card scams", "url": "https://consumer.ftc.gov/" }
+  },
+  {
+    "id": "gt.corporate_payments.04", "topic": "corporate_payments", "locale": "global", "stance": "supports",
+    "claim": "I'll phone the supplier on the number in our contract before we update their bank details.",
+    "fact": "Independently calling back a supplier on previously known contact details is the recommended control against payment redirection and mandate fraud.",
+    "families": ["ceo_wire_fraud"],
+    "source": { "publisher": "Action Fraud (UK National Fraud and Cyber Crime Reporting Centre)", "title": "Mandate fraud", "url": "https://www.actionfraud.police.uk/" }
+  },
+  {
+    "id": "gt.family_verification.01", "topic": "family_verification", "locale": "global", "stance": "refutes",
+    "claim": "It's me, I'm in serious trouble, please send money quickly and don't tell Mom and Dad.",
+    "fact": "In family emergency scams criminals pose as a relative, sometimes using an AI-cloned voice, and ask for secrecy. Hang up and call the relative or another family member on a number you know.",
+    "families": ["family_emergency"],
+    "source": { "publisher": "Federal Trade Commission", "title": "Scammers use AI to enhance their family emergency schemes", "url": "https://consumer.ftc.gov/" }
+  },
+  {
+    "id": "gt.family_verification.02", "topic": "family_verification", "locale": "global", "stance": "refutes",
+    "claim": "I lost my phone so this is my new number, don't try calling my old one.",
+    "fact": "The FBI advises verifying a caller's identity by hanging up and calling the person directly on a number you know. A claimed new number is a way to stop exactly that check.",
+    "families": ["family_emergency", "ceo_wire_fraud"],
+    "source": { "publisher": "FBI Internet Crime Complaint Center (IC3)", "title": "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud", "url": "https://www.ic3.gov/" }
+  },
+  {
+    "id": "gt.family_verification.03", "topic": "family_verification", "locale": "global", "stance": "supports",
+    "claim": "If you want to be sure it's really me, ask me our family code word.",
+    "fact": "The FBI recommends agreeing a secret word or phrase with family members to verify their identity, as a defence against criminals using AI-generated voices.",
+    "families": ["family_emergency", "ceo_wire_fraud"],
+    "source": { "publisher": "FBI Internet Crime Complaint Center (IC3)", "title": "Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud", "url": "https://www.ic3.gov/" }
+  },
+  {
+    "id": "gt.family_verification.04", "topic": "family_verification", "locale": "en-US", "stance": "refutes",
+    "claim": "A courier is coming to your house to collect the cash for your grandson's bail.",
+    "fact": "Courts and police do not send couriers to collect cash for bail or fines. Cash pick-up at the victim's home is a known tactic of grandparent and family emergency scams.",
+    "families": ["family_emergency"],
+    "source": { "publisher": "Federal Trade Commission", "title": "Scammers use AI to enhance their family emergency schemes", "url": "https://consumer.ftc.gov/" }
+  },
+  {
+    "id": "gt.romance_investment.01", "topic": "romance_investment", "locale": "global", "stance": "refutes",
+    "claim": "I'm stationed overseas and can't do video calls, but I need money for a flight so we can finally meet.",
+    "fact": "Romance scammers typically claim to be working abroad, avoid video calls and meeting in person, and eventually ask for money for travel, medical bills or customs fees.",
+    "families": ["romance_advance_fee"],
+    "source": { "publisher": "Federal Trade Commission", "title": "What To Know About Romance Scams", "url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams" }
+  },
+  {
+    "id": "gt.romance_investment.02", "topic": "romance_investment", "locale": "global", "stance": "refutes",
+    "claim": "You have to pay a tax or release fee first before you can withdraw your trading profits.",
+    "fact": "Being asked to pay new fees or taxes before you can withdraw your own balance is a hallmark of fake investment platforms, often introduced through online romance.",
+    "families": ["romance_advance_fee"],
+    "source": { "publisher": "Federal Trade Commission", "title": "What To Know About Romance Scams", "url": "https://consumer.ftc.gov/articles/what-know-about-romance-scams" }
+  },
+  {
+    "id": "gt.romance_investment.03", "topic": "romance_investment", "locale": "global", "stance": "refutes",
+    "claim": "Don't tell your bank the transfer is for me, just say it is for a family member.",
+    "fact": "Being told to lie to your bank about why you are making a payment is a strong sign of fraud. Bank questions about payments exist to protect you from scams.",
+    "families": ["romance_advance_fee", "otp_harvest"],
+    "source": { "publisher": "Take Five to Stop Fraud (UK Finance)", "title": "Take Five: stop, challenge, protect", "url": "https://www.takefive-stopfraud.org.uk/" }
+  },
+  {
+    "id": "gt.romance_investment.04", "topic": "romance_investment", "locale": "global", "stance": "refutes",
+    "claim": "The inheritance gold is held by a diplomatic courier and only needs a release fee to be delivered.",
+    "fact": "Advance fee schemes ask victims to pay up front for a promised shipment, inheritance or windfall that never arrives, with each payment followed by a new fee.",
+    "families": ["romance_advance_fee"],
+    "source": { "publisher": "Federal Bureau of Investigation", "title": "Advance Fee Schemes", "url": "https://www.fbi.gov/" }
+  }
+]

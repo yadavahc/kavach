@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.romance_advance_fee.hook.01",
+    "family": "romance_advance_fee", "stage": "hook", "severity": 2, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 1, "secrecy": 0, "authority": 0 },
+    "text": "Hi darling, I finally got a signal out here on the rig. I have been thinking about you all day and I wanted to hear your voice before my shift starts.",
+    "tell": "Remote job with unreliable contact is the standard cover for never meeting or video calling."
+  },
+  {
+    "id": "pb.romance_advance_fee.hook.02",
+    "family": "romance_advance_fee", "stage": "hook", "severity": 1, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hello, sorry, I think I dialled the wrong number, but you sound so kind. I am new in this city and don't know anyone yet, would you mind talking for a minute?",
+    "tell": "The 'wrong number' opener is used to start long-con romance and investment relationships."
+  },
+  {
+    "id": "pb.romance_advance_fee.hook.03",
+    "family": "romance_advance_fee", "stage": "hook", "severity": 2, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "My love, I have wonderful news. The contract payment finally came through, and once I clear one small problem I can book my flight to come and see you.",
+    "tell": "A long-awaited meeting that depends on 'one small problem' foreshadows the first request for money."
+  },
+  {
+    "id": "pb.romance_advance_fee.authority_claim.01",
+    "family": "romance_advance_fee", "stage": "authority_claim", "severity": 3, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 1, "secrecy": 1, "authority": 2 },
+    "text": "I am a surgeon with the United Nations medical team, stationed abroad for another six months. We are not allowed to make video calls from the base for security reasons.",
+    "tell": "Prestigious overseas posting plus a rule against video calls explains away why you have never seen them live."
+  },
+  {
+    "id": "pb.romance_advance_fee.authority_claim.02",
+    "family": "romance_advance_fee", "stage": "authority_claim", "severity": 3, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "My financial advisor showed me how I tripled my savings on this crypto trading platform. I can send you my account screenshots, all the returns are verified.",
+    "tell": "Screenshots of guaranteed-looking returns from an online friend are the hook of investment 'pig butchering' fraud."
+  },
+  {
+    "id": "pb.romance_advance_fee.authority_claim.03",
+    "family": "romance_advance_fee", "stage": "authority_claim", "severity": 3, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 1, "authority": 2 },
+    "text": "The box contains my late father's gold and the inheritance documents. The diplomatic courier company is licensed, and the customs lawyer has confirmed everything is legal.",
+    "tell": "Inheritance shipments via 'diplomatic couriers' always end in release fees paid by the victim."
+  },
+  {
+    "id": "pb.romance_advance_fee.isolation.01",
+    "family": "romance_advance_fee", "stage": "isolation", "severity": 4, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 3, "secrecy": 3, "authority": 0 },
+    "text": "Please don't tell your children about us yet. They won't understand what we have, and they will try to turn you against me before we even get to meet.",
+    "tell": "Pre-emptively discrediting family is how romance scammers cut off the people who would spot the fraud."
+  },
+  {
+    "id": "pb.romance_advance_fee.isolation.02",
+    "family": "romance_advance_fee", "stage": "isolation", "severity": 4, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 3, "authority": 0 },
+    "text": "Your bank manager doesn't understand international transfers, they will just block it and ask silly questions. If they ask, tell them the money is for a family member.",
+    "tell": "Coaching you to lie to the bank neutralises the fraud checks designed to protect you."
+  },
+  {
+    "id": "pb.romance_advance_fee.isolation.03",
+    "family": "romance_advance_fee", "stage": "isolation", "severity": 3, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 2, "secrecy": 2, "authority": 0 },
+    "text": "Let's move our chats to this private messaging app. The dating site reads everything and it keeps deleting the messages I send to you.",
+    "tell": "Leaving the platform escapes its fraud detection and account bans."
+  },
+  {
+    "id": "pb.romance_advance_fee.urgency.01",
+    "family": "romance_advance_fee", "stage": "urgency", "severity": 4, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 0, "authority": 0 },
+    "text": "They are holding my passport at the airport until I pay a release fee, and if I miss this flight I lose my contract. You are the only person I can turn to right now.",
+    "tell": "Sudden crisis that only your money can solve, framed so refusing feels like abandoning them."
+  },
+  {
+    "id": "pb.romance_advance_fee.urgency.02",
+    "family": "romance_advance_fee", "stage": "urgency", "severity": 4, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "The trading window closes tonight, and the platform only allows withdrawals after the minimum deposit is completed. If we wait, your profits will be frozen.",
+    "tell": "Paying to withdraw 'profits' is the defining sign of a fake investment platform."
+  },
+  {
+    "id": "pb.romance_advance_fee.urgency.03",
+    "family": "romance_advance_fee", "stage": "urgency", "severity": 4, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 0, "authority": 0 },
+    "text": "The hospital won't start my treatment until the deposit is paid, and my bank card is blocked overseas. Please, my love, I am really scared.",
+    "tell": "Medical emergency with conveniently blocked cards; no legitimate hospital requires a partner abroad to pay."
+  },
+  {
+    "id": "pb.romance_advance_fee.extraction.01",
+    "family": "romance_advance_fee", "stage": "extraction", "severity": 5, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 1, "authority": 0 },
+    "text": "Could you send three thousand dollars through a money transfer service in my agent's name? I will pay you back the moment I land, I promise on my life.",
+    "tell": "Money to a third-party 'agent' by wire transfer is unrecoverable and never repaid."
+  },
+  {
+    "id": "pb.romance_advance_fee.extraction.02",
+    "family": "romance_advance_fee", "stage": "extraction", "severity": 5, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Transfer the tax clearance fee to the platform's wallet address I sent you, and then your full balance can be withdrawn to your bank.",
+    "tell": "Every fee paid unlocks another fee; the balance does not exist."
+  },
+  {
+    "id": "pb.romance_advance_fee.extraction.03",
+    "family": "romance_advance_fee", "stage": "extraction", "severity": 5, "impersonates": "stranger", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 1, "authority": 0 },
+    "text": "Just buy the gift cards at the pharmacy, scratch off the codes and send me the pictures. That is the only payment they accept over here.",
+    "tell": "No hospital, airport or government accepts gift card codes as payment."
+  }
+]

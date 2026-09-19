@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.kyc_expiry.hook.01",
+    "family": "kyc_expiry", "stage": "hook", "severity": 2, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Dear customer, this call is from your bank's KYC department. Your KYC documents have expired and your account will be temporarily blocked from this evening.",
+    "tell": "Banks notify KYC renewal in writing and through the branch or app, with weeks of notice, not same-day blocking calls."
+  },
+  {
+    "id": "pb.kyc_expiry.hook.02",
+    "family": "kyc_expiry", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Hello sir, I am calling from your mobile network about your SIM card KYC. Your documents were not updated after the new rule, so the SIM will be deactivated within twenty-four hours.",
+    "tell": "SIM re-verification happens at a store with the original ID, not by phone under a disconnection countdown."
+  },
+  {
+    "id": "pb.kyc_expiry.hook.03",
+    "family": "kyc_expiry", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Madam, the KYC on your wallet app is still pending, and under the latest RBI guideline unverified wallets are being suspended. I will update it with you on the call itself, it takes two minutes.",
+    "tell": "Offering to complete verification for you over a call is the setup for collecting codes or installing an app."
+  },
+  {
+    "id": "pb.kyc_expiry.authority_claim.01",
+    "family": "kyc_expiry", "stage": "authority_claim", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "I am an authorised executive from the head office KYC team, my employee code is K Y C four five eight two. You can check that this phone number is registered with the bank.",
+    "tell": "Caller ID and recited employee codes are trivially spoofed; verification means calling the number on your card."
+  },
+  {
+    "id": "pb.kyc_expiry.authority_claim.02",
+    "family": "kyc_expiry", "stage": "authority_claim", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 3 },
+    "text": "This is a mandatory Reserve Bank of India directive. Every account holder must re-verify their PAN and Aadhaar linking today, otherwise the account is treated as a benami account.",
+    "tell": "Invoking the RBI and legal terms like benami to make routine paperwork sound criminal."
+  },
+  {
+    "id": "pb.kyc_expiry.authority_claim.03",
+    "family": "kyc_expiry", "stage": "authority_claim", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "I can see your details on my screen, your full name, your home branch and the last four digits of your debit card. I am calling from the official verification desk, so there is nothing to worry about.",
+    "tell": "Reciting leaked partial data to prove legitimacy; knowing some of your details does not make a caller your bank."
+  },
+  {
+    "id": "pb.kyc_expiry.isolation.01",
+    "family": "kyc_expiry", "stage": "isolation", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 0, "authority": 1 },
+    "text": "Please don't visit the branch for this, the branch staff cannot update online KYC and they will make you come three times. I will finish it with you right now on the phone.",
+    "tell": "Discouraging a branch visit keeps you away from the one place that would confirm the call is fake."
+  },
+  {
+    "id": "pb.kyc_expiry.isolation.02",
+    "family": "kyc_expiry", "stage": "isolation", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 2, "secrecy": 0, "authority": 1 },
+    "text": "Do not disconnect or put the call on hold. If the session breaks, the verification restarts from zero and your account goes into freeze status automatically.",
+    "tell": "Hanging up to call your bank back is the correct move, which is exactly what this threat discourages."
+  },
+  {
+    "id": "pb.kyc_expiry.isolation.03",
+    "family": "kyc_expiry", "stage": "isolation", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 1, "secrecy": 2, "authority": 1 },
+    "text": "Don't share this process with anyone else in the family. The KYC link is tied to your personal biometric and becomes invalid if somebody else opens it.",
+    "tell": "Technical-sounding reason for secrecy; a family member would recognise the scam."
+  },
+  {
+    "id": "pb.kyc_expiry.urgency.01",
+    "family": "kyc_expiry", "stage": "urgency", "severity": 4, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Your account is already restricted and only incoming transactions are allowed. In thirty minutes outgoing payments will stop as well, and your salary will not be credited this month.",
+    "tell": "Threatens income and daily payments on a short clock to push you past verification."
+  },
+  {
+    "id": "pb.kyc_expiry.urgency.02",
+    "family": "kyc_expiry", "stage": "urgency", "severity": 4, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Today is the last date for KYC compliance. After midnight the account will be closed and your balance transferred to the RBI unclaimed deposit fund.",
+    "tell": "Unclaimed-deposit transfer applies to accounts inactive for years, not to a missed phone KYC deadline."
+  },
+  {
+    "id": "pb.kyc_expiry.urgency.03",
+    "family": "kyc_expiry", "stage": "urgency", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Sir, I am saying this for your own benefit, please do it fast. There are two hundred customers waiting in my queue and after this call your ticket will be cancelled.",
+    "tell": "Friendly-helper urgency: the caller frames speed as a favour so hesitation feels rude."
+  },
+  {
+    "id": "pb.kyc_expiry.extraction.01",
+    "family": "kyc_expiry", "stage": "extraction", "severity": 5, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "You will now receive a six digit code on your registered mobile for KYC verification. Please read it out to me so I can update your record in the system.",
+    "tell": "That code authorises a transaction or account change; banks never ask you to read an OTP to anyone."
+  },
+  {
+    "id": "pb.kyc_expiry.extraction.02",
+    "family": "kyc_expiry", "stage": "extraction", "severity": 5, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Download the app from the link I am sending, it is the official KYC support app. Once it is installed, allow it to view your screen so I can guide you step by step.",
+    "tell": "A screen-sharing app gives the caller your OTPs and banking screens; official KYC never needs one."
+  },
+  {
+    "id": "pb.kyc_expiry.extraction.03",
+    "family": "kyc_expiry", "stage": "extraction", "severity": 5, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Enter your debit card number and ATM PIN on the verification page to confirm you are the genuine account holder. The page is fully secured by the bank.",
+    "tell": "No legitimate page asks for your ATM PIN; the 'verification page' is a phishing form."
+  }
+]

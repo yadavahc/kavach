@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.digital_arrest.hook.01",
+    "family": "digital_arrest", "stage": "hook", "severity": 2, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 1, "secrecy": 0, "authority": 2 },
+    "text": "Hello, am I speaking with the account holder? This call is from the Mumbai cyber crime cell. A complaint has been registered against your Aadhaar number, so please stay on the line and do not disconnect.",
+    "tell": "Police do not open an investigation with a cold call, and 'do not disconnect' is the first isolation move."
+  },
+  {
+    "id": "pb.digital_arrest.hook.02",
+    "family": "digital_arrest", "stage": "hook", "severity": 2, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Sir, your mobile number is linked to illegal advertising and harassment messages. Within two hours this number will be blocked on all networks. Press nine now to speak with the investigating officer.",
+    "tell": "Telecom-disconnection threat used as a funnel to a fake officer; regulators do not disconnect numbers by robocall."
+  },
+  {
+    "id": "pb.digital_arrest.hook.03",
+    "family": "digital_arrest", "stage": "hook", "severity": 2, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 1, "secrecy": 0, "authority": 3 },
+    "text": "Good afternoon, this is Sub-Inspector Rathore from Andheri police station. Your name has come up in a money laundering FIR and I need to record your statement right now over a video call.",
+    "tell": "Statements are recorded in person at a station with notice, never demanded instantly on a video call."
+  },
+  {
+    "id": "pb.digital_arrest.authority_claim.01",
+    "family": "digital_arrest", "stage": "authority_claim", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 3 },
+    "text": "I am Deputy Superintendent Rakesh Verma from the CBI, badge number four seven two nine. I am sending the FIR copy and the arrest warrant signed by the magistrate on WhatsApp so you can check the seal yourself.",
+    "tell": "Warrants and FIRs are not served over WhatsApp; a 'check the seal yourself' document is forged credibility."
+  },
+  {
+    "id": "pb.digital_arrest.authority_claim.02",
+    "family": "digital_arrest", "stage": "authority_claim", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 1, "authority": 3 },
+    "text": "This case is being handled jointly by the Enforcement Directorate and the Reserve Bank. Your Aadhaar was used to open a bank account that received crores from a trafficking gang, and sixty-eight people are already arrested.",
+    "tell": "Stacking agencies and a huge arrest count to overwhelm; RBI does not investigate individuals with the ED by phone."
+  },
+  {
+    "id": "pb.digital_arrest.authority_claim.03",
+    "family": "digital_arrest", "stage": "authority_claim", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 1, "authority": 3 },
+    "text": "You are now connected to the virtual court and the honourable judge is present on this video call. Keep your camera on, answer only what is asked, and address the judge as your honour.",
+    "tell": "There is no 'virtual court' that tries a citizen over a surprise video call; this is a staged set."
+  },
+  {
+    "id": "pb.digital_arrest.isolation.01",
+    "family": "digital_arrest", "stage": "isolation", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 3, "secrecy": 2, "authority": 3 },
+    "text": "From this moment you are under digital arrest. You cannot leave the room, you cannot call anyone, and your camera must stay on at all times until the investigation is complete.",
+    "tell": "'Digital arrest' has no basis in Indian law; confining someone to a camera is the core coercion of this scam."
+  },
+  {
+    "id": "pb.digital_arrest.isolation.02",
+    "family": "digital_arrest", "stage": "isolation", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 3, "authority": 2 },
+    "text": "Do not tell your husband, your children or any relative about this. Some of the accused are in your own circle, and if the information leaks you will be charged with helping them escape.",
+    "tell": "Cutting off family is how the scam prevents a reality check; real investigations never forbid you from telling family."
+  },
+  {
+    "id": "pb.digital_arrest.isolation.03",
+    "family": "digital_arrest", "stage": "isolation", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 2, "authority": 3 },
+    "text": "If anyone knocks on the door, send them away. Do not go to your local police station either, they have no authority in a central agency case and it will only spoil your bail.",
+    "tell": "Steering the victim away from real police is a decisive tell; genuine officers welcome local verification."
+  },
+  {
+    "id": "pb.digital_arrest.urgency.01",
+    "family": "digital_arrest", "stage": "urgency", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 2, "secrecy": 1, "authority": 3 },
+    "text": "The arrest team is already outside your building. I can hold them back only if you cooperate in the next thirty minutes, because once the warrant is executed there is nothing I can do for you.",
+    "tell": "An invisible team 'outside' plus a personal favour from the officer manufactures panic and dependence."
+  },
+  {
+    "id": "pb.digital_arrest.urgency.02",
+    "family": "digital_arrest", "stage": "urgency", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 1, "authority": 3 },
+    "text": "The Supreme Court hearing is at four o'clock today. If your funds are not verified before then, all your accounts will be frozen permanently and your passport will be cancelled.",
+    "tell": "Courts do not schedule same-day hearings tied to a phone 'fund verification'."
+  },
+  {
+    "id": "pb.digital_arrest.urgency.03",
+    "family": "digital_arrest", "stage": "urgency", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 0, "authority": 2 },
+    "text": "Every minute you waste is being recorded as non-cooperation. Your case will be moved to the non-bailable category and you could be kept in custody for seven years.",
+    "tell": "Escalating legal jargon under a ticking clock is designed to stop the victim from thinking or consulting anyone."
+  },
+  {
+    "id": "pb.digital_arrest.extraction.01",
+    "family": "digital_arrest", "stage": "extraction", "severity": 5, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 1, "secrecy": 2, "authority": 3 },
+    "text": "To prove your money is clean you must transfer the full balance to the RBI verification account I am sending now. After the audit the entire amount will be refunded to you within forty-eight hours.",
+    "tell": "No agency 'verifies' money by having you transfer it; the refund promise is the extraction."
+  },
+  {
+    "id": "pb.digital_arrest.extraction.02",
+    "family": "digital_arrest", "stage": "extraction", "severity": 5, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 1, "secrecy": 1, "authority": 2 },
+    "text": "Open your net banking and read out the balance of every account, including fixed deposits. Then break the FD and move the funds into the secured government account for safe custody.",
+    "tell": "Asking for balances then a 'safe custody' account is the money-movement step; the government holds no such account for you."
+  },
+  {
+    "id": "pb.digital_arrest.extraction.03",
+    "family": "digital_arrest", "stage": "extraction", "severity": 5, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 1, "authority": 3 },
+    "text": "Pay the security deposit of four lakh rupees by RTGS to the court registrar's account, then show me the transaction screenshot on video so I can stop the warrant.",
+    "tell": "Bail and deposits are never paid to an individual account on a phone instruction to cancel a warrant."
+  }
+]

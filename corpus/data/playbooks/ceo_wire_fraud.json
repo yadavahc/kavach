@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.ceo_wire_fraud.hook.01",
+    "family": "ceo_wire_fraud", "stage": "hook", "severity": 2, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 1, "secrecy": 2, "authority": 2 },
+    "text": "Hi, it's Michael. Are you at your desk? I need a quick favour handled discreetly, I'm about to walk into a board meeting and can't talk for long.",
+    "tell": "Executive voice asking for a 'discreet favour' while unreachable is the classic opening of a cloned-voice payment fraud."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.hook.02",
+    "family": "ceo_wire_fraud", "stage": "hook", "severity": 2, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 2, "authority": 2 },
+    "text": "Hello, this is David from the CFO's office. The chief executive asked me to reach you directly about a confidential acquisition payment that has to go out today.",
+    "tell": "Bypassing your normal chain via a named intermediary plus 'confidential' and 'today' in the first breath."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.hook.03",
+    "family": "ceo_wire_fraud", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Good morning, I'm calling from your supplier's accounts team. We've changed banks after an audit, so please update our payment details before you run this week's invoices.",
+    "tell": "Vendor bank-detail changes requested by phone are the single most common invoice-redirection fraud."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.authority_claim.01",
+    "family": "ceo_wire_fraud", "stage": "authority_claim", "severity": 3, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 2, "authority": 3 },
+    "text": "This is part of a deal the board approved last night, and the external law firm is handling it. You'll get an email from their partner in a minute with the paperwork.",
+    "tell": "A 'lawyer' email arriving on cue is a coordinated second channel controlled by the same fraudster."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.authority_claim.02",
+    "family": "ceo_wire_fraud", "stage": "authority_claim", "severity": 3, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 1, "secrecy": 2, "authority": 3 },
+    "text": "I've been personally authorised by the chief financial officer to act on this. You won't find it in the usual approval system because it's covered by a non-disclosure agreement.",
+    "tell": "Explaining away why the payment is missing from the approval system is itself the red flag."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.authority_claim.03",
+    "family": "ceo_wire_fraud", "stage": "authority_claim", "severity": 3, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "I can send you a letter on our company letterhead confirming the new account, signed by our finance director. Our old account is frozen while the audit is going on.",
+    "tell": "Letterhead is easy to forge; bank changes must be confirmed by calling the vendor on a number already on file."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.isolation.01",
+    "family": "ceo_wire_fraud", "stage": "isolation", "severity": 4, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 3, "authority": 2 },
+    "text": "Don't loop in anyone else on the finance team for now, not even your manager. If word of this acquisition gets out before the announcement, the whole deal collapses.",
+    "tell": "Instructions to skip your manager and dual control are how the fraud avoids the second pair of eyes."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.isolation.02",
+    "family": "ceo_wire_fraud", "stage": "isolation", "severity": 4, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 2, "authority": 1 },
+    "text": "Just deal with me directly on this mobile. I'm travelling and my email is unreliable, so don't reply to my work address and please don't call the office.",
+    "tell": "Blocking the known-good channels (work email, office line) leaves only the channel the attacker controls."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.isolation.03",
+    "family": "ceo_wire_fraud", "stage": "isolation", "severity": 4, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 3, "authority": 2 },
+    "text": "Please keep this strictly between the two of us. Treasury will be told after the transfer clears, and I'll take full responsibility if anyone asks you questions.",
+    "tell": "Pre-emptively absorbing blame lowers the employee's guard against an unapproved transfer."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.urgency.01",
+    "family": "ceo_wire_fraud", "stage": "urgency", "severity": 4, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 1, "authority": 2 },
+    "text": "The wire has to reach their account before the bank's cut-off at three o'clock today, or we lose the exclusivity window and the entire deal falls through.",
+    "tell": "Banking cut-off times are used to rush payments past callback verification."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.urgency.02",
+    "family": "ceo_wire_fraud", "stage": "urgency", "severity": 4, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "I really need this done in the next twenty minutes. I'm counting on you here, and believe me, this kind of help gets noticed when bonuses are decided.",
+    "tell": "Reward-and-loyalty pressure from a senior voice replaces process with personal obligation."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.urgency.03",
+    "family": "ceo_wire_fraud", "stage": "urgency", "severity": 4, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Our shipment stays on hold until this invoice is settled, and your production line will stop tomorrow if the payment doesn't go out today.",
+    "tell": "Operational threat from a 'vendor' pressuring payment to details that have not been independently confirmed."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.extraction.01",
+    "family": "ceo_wire_fraud", "stage": "extraction", "severity": 5, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 2, "authority": 2 },
+    "text": "Send two hundred and forty thousand dollars to the escrow account details I'm texting you now. Put project consultancy as the reference and send me the confirmation once it's released.",
+    "tell": "Large wire to new details, vague reference text, confirmation back to the caller: textbook business email compromise payout."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.extraction.02",
+    "family": "ceo_wire_fraud", "stage": "extraction", "severity": 5, "impersonates": "known_contact", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 2, "authority": 2 },
+    "text": "Go ahead and buy ten gift cards of five hundred each for the client appreciation event, scratch off the backs and send me photos of the codes.",
+    "tell": "No business pays anyone with photographed gift card codes; it is untraceable cash-out."
+  },
+  {
+    "id": "pb.ceo_wire_fraud.extraction.03",
+    "family": "ceo_wire_fraud", "stage": "extraction", "severity": 5, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Please process the outstanding invoices to the new account number and sort code I've just emailed, and cancel the payment you scheduled to the old details.",
+    "tell": "Redirecting already-scheduled payments to new details is the moment money is lost; call back on the known number first."
+  }
+]

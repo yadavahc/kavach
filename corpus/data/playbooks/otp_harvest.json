@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.otp_harvest.hook.01",
+    "family": "otp_harvest", "stage": "hook", "severity": 2, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Hello, this is the fraud prevention team at your bank. We have detected a suspicious transaction of forty-nine thousand rupees on your card at an online store. Did you make this purchase?",
+    "tell": "A fake fraud alert makes you anxious and cooperative; it is the setup for asking you to 'cancel' with a code."
+  },
+  {
+    "id": "pb.otp_harvest.hook.02",
+    "family": "otp_harvest", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Congratulations, your credit card has earned reward points worth eight thousand rupees that expire today. I can redeem them straight into your account while we are on the call.",
+    "tell": "Unsolicited reward redemption over the phone is a lure; points are redeemed only inside the bank's own app or site."
+  },
+  {
+    "id": "pb.otp_harvest.hook.03",
+    "family": "otp_harvest", "stage": "hook", "severity": 2, "impersonates": "institution", "locale": "en-GB",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Hi, I'm calling from your bank's security department about a new payee that was just added to your online banking. If this wasn't you, I can block it for you immediately.",
+    "tell": "Offering to 'block' a threat you cannot see gives the caller a reason to request authentication codes."
+  },
+  {
+    "id": "pb.otp_harvest.authority_claim.01",
+    "family": "otp_harvest", "stage": "authority_claim", "severity": 3, "impersonates": "institution", "locale": "en-US",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "For your security I'll confirm some details first. Your card ends in four three one seven and your date of birth is on file. I'm a senior fraud analyst and this line is recorded.",
+    "tell": "Reciting partial card data and 'recorded line' to sound official; this data is commonly bought from breaches."
+  },
+  {
+    "id": "pb.otp_harvest.authority_claim.02",
+    "family": "otp_harvest", "stage": "authority_claim", "severity": 3, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "I am calling from the refunds division. The amount wrongly debited from your account has already been approved for reversal, it only needs your confirmation on this call.",
+    "tell": "Refunds never require you to approve anything or share a code; a 'confirmation' step is how money leaves."
+  },
+  {
+    "id": "pb.otp_harvest.authority_claim.03",
+    "family": "otp_harvest", "stage": "authority_claim", "severity": 3, "impersonates": "authority", "locale": "en-GB",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 1, "authority": 3 },
+    "text": "I work in the bank's anti-fraud unit together with the police. We are tracing a criminal who has cloned your card, and we need your help to catch him in the act.",
+    "tell": "Recruiting you as a helper in a police sting flatters and disarms; real police never need your codes or money."
+  },
+  {
+    "id": "pb.otp_harvest.isolation.01",
+    "family": "otp_harvest", "stage": "isolation", "severity": 3, "impersonates": "institution", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 1, "authority": 1 },
+    "text": "Please don't open your banking app while we fix this. The fraudster is monitoring your logins and will move faster if they see any activity on the account.",
+    "tell": "Keeps you from seeing the transactions the caller is initiating in real time."
+  },
+  {
+    "id": "pb.otp_harvest.isolation.02",
+    "family": "otp_harvest", "stage": "isolation", "severity": 4, "impersonates": "institution", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 1, "authority": 1 },
+    "text": "Do not call the number on the back of your card right now. Those lines are compromised and the criminals could intercept your call.",
+    "tell": "The number on your card is the safe channel; any caller discouraging it is the criminal."
+  },
+  {
+    "id": "pb.otp_harvest.isolation.03",
+    "family": "otp_harvest", "stage": "isolation", "severity": 4, "impersonates": "institution", "locale": "en-GB",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 3, "authority": 1 },
+    "text": "Stay on the line with me, and if any branch staff contact you in the next hour, do not discuss this case with them, because they may be involved.",
+    "tell": "Casting real bank staff as suspects pre-empts the intervention that would stop the fraud."
+  },
+  {
+    "id": "pb.otp_harvest.urgency.01",
+    "family": "otp_harvest", "stage": "urgency", "severity": 4, "impersonates": "institution", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "The fraudulent payment is still pending and will be processed in ten minutes. After that I can no longer stop it, and the money will be gone for good.",
+    "tell": "Countdown on a transaction you cannot see pushes you to hand over the code before thinking."
+  },
+  {
+    "id": "pb.otp_harvest.urgency.02",
+    "family": "otp_harvest", "stage": "urgency", "severity": 3, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Your reward points lapse at midnight and after that they cannot be restored. Let us finish this quickly before the offer closes.",
+    "tell": "Loss-aversion deadline on a benefit, to rush past the fact that redemption never needs a code read aloud."
+  },
+  {
+    "id": "pb.otp_harvest.urgency.03",
+    "family": "otp_harvest", "stage": "urgency", "severity": 4, "impersonates": "institution", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Another attempt to withdraw funds has just started. We have to secure your account within the next few minutes or the attackers will empty it completely.",
+    "tell": "Escalating live 'attacks' keep the victim reactive and compliant."
+  },
+  {
+    "id": "pb.otp_harvest.extraction.01",
+    "family": "otp_harvest", "stage": "extraction", "severity": 5, "impersonates": "institution", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 1, "authority": 1 },
+    "text": "You will receive a one time password now to cancel the transaction. Please read the code to me the moment it arrives, and do not share it with anyone else.",
+    "tell": "The OTP authorises the fraudster's transaction; 'don't share it with anyone else' while asking for it is a contradiction."
+  },
+  {
+    "id": "pb.otp_harvest.extraction.02",
+    "family": "otp_harvest", "stage": "extraction", "severity": 5, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "To receive the refund, open your UPI app and approve the collect request I have sent, then enter your PIN to accept the money.",
+    "tell": "A collect request with a PIN pays the requester; you never enter a PIN to receive money."
+  },
+  {
+    "id": "pb.otp_harvest.extraction.03",
+    "family": "otp_harvest", "stage": "extraction", "severity": 5, "impersonates": "institution", "locale": "en-GB",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "To protect your savings I'll move them into a safe account set up in your name. Read me the authentication code your bank sends so we can create the new payee.",
+    "tell": "Banks never ask you to move money to a 'safe account'; the new payee belongs to the fraudster."
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "pb.benign.bank_alert.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "This is an automated fraud alert from your bank. We noticed a card purchase of two hundred dollars. Press one if you made this purchase or press two if you did not. We will never ask for your PIN.",
+    "tell": "Genuine alerts ask only yes or no about a transaction and never request codes, PINs or transfers."
+  },
+  {
+    "id": "pb.benign.bank_alert.02",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Hi, I'm calling from the bank about the card you reported lost. We have blocked it and a replacement will reach your address in five to seven days. You don't need to do anything else.",
+    "tell": "Follow-up on a request you made, with no action or information demanded from you."
+  },
+  {
+    "id": "pb.benign.bank_alert.03",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "If you're not sure this call is really from us, please hang up and call the number printed on the back of your card. We will never ask you to share a one time password or move your money.",
+    "tell": "Legitimate institutions invite you to hang up and verify through a channel you already trust."
+  },
+  {
+    "id": "pb.benign.courier.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hi, I'm the delivery driver with your package. I'm outside your building but the gate is locked, can you tell me which entrance to use or should I leave it with security?",
+    "tell": "Logistics question about a physical delivery; no payment, codes or threats."
+  },
+  {
+    "id": "pb.benign.courier.02",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hello, I'm calling to confirm your delivery slot for tomorrow between ten and two. Will someone be home to sign for it, or would you like to reschedule on our website?",
+    "tell": "Offers self-service rescheduling through the official site, with no fee or pressure."
+  },
+  {
+    "id": "pb.benign.delivery.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "en-IN",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "I'm at your door with the grocery order. The app is showing you a four digit delivery code, please tell me that code so I can mark the order as delivered.",
+    "tell": "A delivery handover code shown in your own app confirms receipt in person; it cannot move money."
+  },
+  {
+    "id": "pb.benign.family.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hi Mom, just calling to say I landed safely. The flight was delayed a bit but I'm taking a cab home now. I'll call you properly tomorrow after I've slept.",
+    "tell": "Ordinary family check-in: no crisis, no money, no secrecy."
+  },
+  {
+    "id": "pb.benign.family.02",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hey Dad, can you transfer your share for Grandma's birthday gift whenever you get a chance this week? I already put the details in the family group chat, there's no rush.",
+    "tell": "A money request that is open, shared with the whole family and explicitly unhurried."
+  },
+  {
+    "id": "pb.benign.family.03",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "en-IN",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Beta, did you eat? Your cousin's wedding card came today. Talk to your father tonight about the train tickets, we should book before the prices go up next month.",
+    "tell": "Family logistics with involvement of other relatives and a distant, real-world deadline."
+  },
+  {
+    "id": "pb.benign.work.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Hi, it's Priya from accounts. The vendor invoice is waiting in the approval queue, can you review it in the system when you have a moment? It's due Friday, so no rush today.",
+    "tell": "Payment follows the normal approval system with a reasonable deadline."
+  },
+  {
+    "id": "pb.benign.work.02",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Before we pay the new supplier, I'll ring them back on the number from our original contract to confirm their bank details, as our payments policy requires.",
+    "tell": "Independent callback verification on a known number, the control that defeats invoice fraud."
+  },
+  {
+    "id": "pb.benign.doctor.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hello, this is the clinic calling to remind you about your appointment on Thursday at eleven. Please bring your previous reports, and call us if you need to change the time.",
+    "tell": "Routine reminder; nothing requested beyond attending."
+  },
+  {
+    "id": "pb.benign.utility.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "This is a courtesy reminder that your electricity bill is due on the twentieth. You can pay through the official app or at any of our customer service centres.",
+    "tell": "Points to official payment channels with a normal due date; no disconnection threat tonight."
+  },
+  {
+    "id": "pb.benign.police.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Good afternoon, this is the police station about the phone theft complaint you filed last week. Your phone has been recovered, so please come to the station with your ID to collect it.",
+    "tell": "Real police refer to a complaint you made and ask you to come in person, never to pay or stay on a call."
+  },
+  {
+    "id": "pb.benign.telecom.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hello, I'm calling from customer service about the internet complaint you raised yesterday. A technician can visit tomorrow morning, does nine o'clock work for you?",
+    "tell": "Follow-up on your own complaint with an in-person visit, no remote access or payment."
+  },
+  {
+    "id": "pb.benign.friend.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hey, are we still on for dinner on Saturday? I booked the table for seven. Let me know if your sister is joining so I can change the reservation.",
+    "tell": "Social plans that include other people; nothing is extracted."
+  },
+  {
+    "id": "pb.benign.it_helpdesk.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Hi, this is IT support following up on the ticket you opened this morning about your laptop. You don't need to install anything, just bring it to the help desk on the third floor.",
+    "tell": "Responds to a ticket you raised and explicitly avoids remote-access software."
+  },
+  {
+    "id": "pb.benign.insurance.01",
+    "family": "benign", "stage": "none", "severity": 0, "impersonates": "none", "locale": "global",
+    "signals": { "urgency": 0, "isolation": 0, "secrecy": 0, "authority": 0 },
+    "text": "Hi, I'm calling from the insurance company about renewing your car policy, which ends next month. I can email you the quote and you can decide whenever you're ready.",
+    "tell": "Sales call with a distant deadline and no demand for immediate payment or details."
+  }
+]

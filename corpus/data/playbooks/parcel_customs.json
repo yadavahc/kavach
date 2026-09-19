@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.parcel_customs.hook.01",
+    "family": "parcel_customs", "stage": "hook", "severity": 1, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Hello, this is an automated message from your courier service. Your parcel could not be delivered because of an incomplete address. Press one to speak to our customer care executive.",
+    "tell": "Robocall about a parcel you may not be expecting, routing you to a live 'executive' who controls the next step."
+  },
+  {
+    "id": "pb.parcel_customs.hook.02",
+    "family": "parcel_customs", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Good morning madam, I am calling from the international courier hub in Mumbai. A package sent under your name to Iran has been held at our facility. Did you book this shipment?",
+    "tell": "Opens with a parcel you never sent, so the denial itself becomes the lever for the next stage."
+  },
+  {
+    "id": "pb.parcel_customs.hook.03",
+    "family": "parcel_customs", "stage": "hook", "severity": 2, "impersonates": "institution", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Sir, your Speed Post consignment is stuck at the sorting centre because customs duty is pending. If it is not cleared today, the parcel will be returned to the sender.",
+    "tell": "Duty demanded by an unsolicited phone call rather than on the delivery notice or official tracking page."
+  },
+  {
+    "id": "pb.parcel_customs.authority_claim.01",
+    "family": "parcel_customs", "stage": "authority_claim", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 3 },
+    "text": "Customs officers opened the package and found five passports, three credit cards and one hundred forty grams of MDMA. This is a serious offence under the NDPS Act.",
+    "tell": "Contraband contents are invented to create fear; customs does not phone a named 'sender' with a list of seized items."
+  },
+  {
+    "id": "pb.parcel_customs.authority_claim.02",
+    "family": "parcel_customs", "stage": "authority_claim", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 3 },
+    "text": "I am Customs Superintendent Nair from the air cargo complex. The parcel is registered against your Aadhaar and phone number, so legally you are the sender unless you give a statement now.",
+    "tell": "Claims your ID makes you legally liable on the spot, a false premise that forces you to 'clear your name' by phone."
+  },
+  {
+    "id": "pb.parcel_customs.authority_claim.03",
+    "family": "parcel_customs", "stage": "authority_claim", "severity": 3, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Our tracking record shows the booking was paid with a card in your name. I will give you a complaint reference number, and you can confirm it on the website link I am sending you by SMS.",
+    "tell": "Self-verification through a link the caller supplies proves nothing; verify only via the courier's official site you type yourself."
+  },
+  {
+    "id": "pb.parcel_customs.isolation.01",
+    "family": "parcel_customs", "stage": "isolation", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 3, "authority": 2 },
+    "text": "Please do not discuss this parcel with family members until your statement is recorded. If the real sender is someone known to you, they may destroy the evidence.",
+    "tell": "Secrecy framed as protecting the investigation; it actually prevents anyone from telling you it is a scam."
+  },
+  {
+    "id": "pb.parcel_customs.isolation.02",
+    "family": "parcel_customs", "stage": "isolation", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 3, "secrecy": 0, "authority": 2 },
+    "text": "Stay on this line while I transfer you to the customs cyber desk. If the call disconnects, the system automatically marks you as absconding.",
+    "tell": "No system flags you as a fugitive for hanging up; the threat exists to keep you on the line."
+  },
+  {
+    "id": "pb.parcel_customs.isolation.03",
+    "family": "parcel_customs", "stage": "isolation", "severity": 3, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 2, "authority": 2 },
+    "text": "Move to a quiet room where nobody can overhear you. This is a confidential customs matter and third parties are not permitted to be present on the call.",
+    "tell": "Physically separating you from others removes the person most likely to stop the payment."
+  },
+  {
+    "id": "pb.parcel_customs.urgency.01",
+    "family": "parcel_customs", "stage": "urgency", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 0, "authority": 2 },
+    "text": "The parcel will be handed over to the police at six this evening. After that the case cannot be closed from the customs side and a warrant will be issued in your name.",
+    "tell": "Artificial handover deadline converts a parcel problem into an imminent arrest."
+  },
+  {
+    "id": "pb.parcel_customs.urgency.02",
+    "family": "parcel_customs", "stage": "urgency", "severity": 4, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "The clearance window closes in one hour. If the duty is not paid now, a penalty of ten times the value is added and your address is blacklisted for international shipping.",
+    "tell": "Invented multipliers and blacklists; real duty notices give days, a written demand and official payment channels."
+  },
+  {
+    "id": "pb.parcel_customs.urgency.03",
+    "family": "parcel_customs", "stage": "urgency", "severity": 3, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 3, "isolation": 1, "secrecy": 0, "authority": 1 },
+    "text": "Your consignment is already on the list for destruction tomorrow morning. Only a clearance done right now during this call can release it.",
+    "tell": "'Only during this call' removes the option to verify independently later."
+  },
+  {
+    "id": "pb.parcel_customs.extraction.01",
+    "family": "parcel_customs", "stage": "extraction", "severity": 5, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Pay the customs clearance fee of eighteen thousand five hundred rupees to the UPI ID I am sending. The moment the payment reflects, I will release the parcel and cancel the complaint.",
+    "tell": "Government duty is never collected to a personal UPI ID given out by a caller."
+  },
+  {
+    "id": "pb.parcel_customs.extraction.02",
+    "family": "parcel_customs", "stage": "extraction", "severity": 5, "impersonates": "authority", "locale": "en-IN",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Scan the QR code I sent on WhatsApp and enter your UPI PIN to complete the duty payment. You will get a receipt from the customs department within ten minutes.",
+    "tell": "Entering a UPI PIN always sends money out of your account; it is never needed to receive or clear anything."
+  },
+  {
+    "id": "pb.parcel_customs.extraction.03",
+    "family": "parcel_customs", "stage": "extraction", "severity": 5, "impersonates": "company", "locale": "en-IN",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "To file the no objection certificate I need your card number, the expiry date and the three digit code on the back. A processing fee of ninety-nine rupees will be deducted from it.",
+    "tell": "A tiny fee is the pretext for capturing full card details, which are then used for much larger charges."
+  }
+]

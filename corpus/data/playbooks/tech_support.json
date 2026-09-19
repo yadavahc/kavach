@@ -1,0 +1,107 @@
+[
+  {
+    "id": "pb.tech_support.hook.01",
+    "family": "tech_support", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "en-US",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Hello, this is the Windows technical department. We are receiving error reports from your computer showing that it has been infected with a dangerous virus.",
+    "tell": "Software companies do not monitor your PC and phone you about infections."
+  },
+  {
+    "id": "pb.tech_support.hook.02",
+    "family": "tech_support", "stage": "hook", "severity": 2, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Hi, I'm calling from your internet provider. Your router's IP address has been used by hackers, and your connection will be suspended unless we secure your network today.",
+    "tell": "Unsolicited 'your IP was hacked' calls are a pretext to get remote access to your device."
+  },
+  {
+    "id": "pb.tech_support.hook.03",
+    "family": "tech_support", "stage": "hook", "severity": 3, "impersonates": "company", "locale": "en-US",
+    "signals": { "urgency": 2, "isolation": 1, "secrecy": 0, "authority": 1 },
+    "text": "Thank you for calling the number on the security warning on your screen. Do not turn off or restart the computer, or you could lose all your files permanently.",
+    "tell": "Browser pop-ups with phone numbers are fake; restarting is safe and closes the scare page."
+  },
+  {
+    "id": "pb.tech_support.authority_claim.01",
+    "family": "tech_support", "stage": "authority_claim", "severity": 3, "impersonates": "company", "locale": "en-US",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "I am a certified Microsoft technician and your computer licence ID is linked to our server. I can prove the infection is real by showing you the errors in the event viewer.",
+    "tell": "Event Viewer always shows harmless warnings; showing them as 'proof' is a scripted trick."
+  },
+  {
+    "id": "pb.tech_support.authority_claim.02",
+    "family": "tech_support", "stage": "authority_claim", "severity": 3, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Our security team has traced foreign hackers accessing your online banking from this device. We work together with your bank's fraud department on cases like yours.",
+    "tell": "Tech companies do not run joint fraud investigations with your bank about your personal device."
+  },
+  {
+    "id": "pb.tech_support.authority_claim.03",
+    "family": "tech_support", "stage": "authority_claim", "severity": 3, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 2 },
+    "text": "Look at all the red and yellow warnings on this screen, every one of those is an active threat. I have seen hundreds of these and yours is one of the worst I've seen.",
+    "tell": "Normal system logs dressed up as an emergency to justify an expensive 'fix'."
+  },
+  {
+    "id": "pb.tech_support.isolation.01",
+    "family": "tech_support", "stage": "isolation", "severity": 3, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 2, "secrecy": 1, "authority": 1 },
+    "text": "Don't let anybody else use the computer or check email until I finish, because any activity will alert the hackers that we are onto them.",
+    "tell": "Keeps family from seeing the remote session and noticing what the 'technician' is doing."
+  },
+  {
+    "id": "pb.tech_support.isolation.02",
+    "family": "tech_support", "stage": "isolation", "severity": 4, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 3, "secrecy": 2, "authority": 1 },
+    "text": "Please don't call your bank or your children about this right now. The hackers may be listening through your phone, and I will explain everything to them afterwards.",
+    "tell": "Blocking calls to the bank and family is isolation, not security."
+  },
+  {
+    "id": "pb.tech_support.isolation.03",
+    "family": "tech_support", "stage": "isolation", "severity": 3, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 2, "isolation": 2, "secrecy": 0, "authority": 1 },
+    "text": "Keep the computer switched on and stay close to it. If you hang up, the remote session is locked and the hackers will have full control of your device.",
+    "tell": "Hanging up and disconnecting the internet is the right action; the threat is invented to stop it."
+  },
+  {
+    "id": "pb.tech_support.urgency.01",
+    "family": "tech_support", "stage": "urgency", "severity": 4, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Your files are being encrypted as we speak. If we don't install the protection in the next few minutes, your photos and documents will be lost forever.",
+    "tell": "Fake ransomware countdown to force installation of remote-access software."
+  },
+  {
+    "id": "pb.tech_support.urgency.02",
+    "family": "tech_support", "stage": "urgency", "severity": 4, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 3, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "The hackers are trying to transfer money out of your account right now. We have to lock down your banking before they finish, so please act quickly.",
+    "tell": "Pivot from computer problem to bank account is where tech support scams take money."
+  },
+  {
+    "id": "pb.tech_support.urgency.03",
+    "family": "tech_support", "stage": "urgency", "severity": 3, "impersonates": "company", "locale": "en-US",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Your warranty support expires today, and after that each repair costs more than a thousand dollars. It is much cheaper to renew the protection plan now.",
+    "tell": "A same-day expiring 'protection plan' sold on an unsolicited call."
+  },
+  {
+    "id": "pb.tech_support.extraction.01",
+    "family": "tech_support", "stage": "extraction", "severity": 5, "impersonates": "company", "locale": "global",
+    "signals": { "urgency": 1, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "Go to the website I will spell out and download the support tool, then read me the nine digit access code so I can connect to your computer.",
+    "tell": "The access code hands a stranger full control of your computer, including your banking sessions."
+  },
+  {
+    "id": "pb.tech_support.extraction.02",
+    "family": "tech_support", "stage": "extraction", "severity": 5, "impersonates": "company", "locale": "en-US",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 0, "authority": 1 },
+    "text": "The protection plan is two hundred ninety-nine dollars for three years. Log into your bank on the screen so I can process the payment for you.",
+    "tell": "Logging into your bank while a stranger controls the screen lets them move money and fake the balance."
+  },
+  {
+    "id": "pb.tech_support.extraction.03",
+    "family": "tech_support", "stage": "extraction", "severity": 5, "impersonates": "company", "locale": "en-US",
+    "signals": { "urgency": 2, "isolation": 0, "secrecy": 1, "authority": 1 },
+    "text": "I accidentally refunded you ten thousand instead of one hundred. You need to send back the difference, so please go to the store and buy gift cards for that amount.",
+    "tell": "The 'overpayment' is your own money moved between your accounts; gift cards are the untraceable cash-out."
+  }
+]
