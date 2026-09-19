@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "model": "moss-minilm",
+  "builtAt": "2026-09-15T19:32:23.420Z",
+  "indexes": {
+    "playbooks": {
+      "name": "kavach-playbooks-3e41579bdd",
+      "hash": "3e41579bdd",
+      "docCount": 138,
+      "buildMs": null
+    },
+    "ground_truth": {
+      "name": "kavach-ground-truth-3b80c11a2c",
+      "hash": "3b80c11a2c",
+      "docCount": 50,
+      "buildMs": null
+    }
+  },
+  "previous": {}
+}
