@@ -1,0 +1,813 @@
+{
+  "generatedAt": "2026-09-15T19:38:37.441Z",
+  "init": {
+    "crossOriginIsolated": true,
+    "hardwareConcurrency": 16,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/152.0.0.0 Safari/537.36",
+    "timerResolutionMs": 0.004999995231628418,
+    "ortNumThreads": 4,
+    "initMs": 3746.535000026226,
+    "loadIndexMs": {
+      "kavach-playbooks-3e41579bdd": 3402.625,
+      "kavach-ground-truth-3b80c11a2c": 2570.5049999952316
+    }
+  },
+  "rows": [
+    {
+      "index": "kavach-playbooks-3e41579bdd",
+      "text": "please read me the code that just arrived",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.otp_harvest.extraction.01",
+              "score": 1
+            },
+            {
+              "id": "pb.kyc_expiry.extraction.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.tech_support.extraction.01",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.benign.delivery.01",
+              "score": 1
+            },
+            {
+              "id": "pb.otp_harvest.extraction.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.kyc_expiry.extraction.01",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.benign.delivery.01",
+              "score": 0.9771428108215332
+            },
+            {
+              "id": "pb.otp_harvest.extraction.01",
+              "score": 0.9750000238418579
+            },
+            {
+              "id": "pb.kyc_expiry.extraction.01",
+              "score": 0.9452651739120483
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-playbooks-3e41579bdd",
+      "text": "your parcel was seized by customs",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": false,
+          "queryMaxDelta": 0,
+          "queryOrderStable": false,
+          "first": [
+            {
+              "id": "pb.parcel_customs.urgency.01",
+              "score": 1
+            },
+            {
+              "id": "pb.parcel_customs.hook.03",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.parcel_customs.hook.01",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.parcel_customs.urgency.01",
+              "score": 1
+            },
+            {
+              "id": "pb.parcel_customs.authority_claim.02",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.romance_advance_fee.authority_claim.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0.005525827407836914,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0.005525827407836914,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.parcel_customs.urgency.01",
+              "score": 1
+            },
+            {
+              "id": "pb.parcel_customs.authority_claim.02",
+              "score": 0.9628788232803345
+            },
+            {
+              "id": "pb.parcel_customs.hook.01",
+              "score": 0.9117647409439087
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-playbooks-3e41579bdd",
+      "text": "hi mom, I landed safely",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.benign.family.01",
+              "score": 1
+            },
+            {
+              "id": "pb.family_emergency.isolation.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.romance_advance_fee.extraction.01",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.benign.family.01",
+              "score": 1
+            },
+            {
+              "id": "pb.family_emergency.isolation.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.family_emergency.authority_claim.02",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.benign.family.01",
+              "score": 1
+            },
+            {
+              "id": "pb.family_emergency.isolation.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.family_emergency.hook.02",
+              "score": 0.9117647409439087
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-playbooks-3e41579bdd",
+      "text": "you are not permitted to step out or phone anybody, the camera stays on while officers keep watching you, consider yourself in formal custody now",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.digital_arrest.authority_claim.03",
+              "score": 1
+            },
+            {
+              "id": "pb.digital_arrest.isolation.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.tech_support.isolation.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.digital_arrest.isolation.01",
+              "score": 1
+            },
+            {
+              "id": "pb.romance_advance_fee.authority_claim.01",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.family_emergency.isolation.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.digital_arrest.isolation.01",
+              "score": 0.9937499761581421
+            },
+            {
+              "id": "pb.romance_advance_fee.authority_claim.01",
+              "score": 0.7750000357627869
+            },
+            {
+              "id": "pb.family_emergency.isolation.03",
+              "score": 0.7515152096748352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-playbooks-3e41579bdd",
+      "text": "this is the narcotics bureau, your identity documents were misused in a laundering racket and the magistrate has already signed papers against you",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.digital_arrest.authority_claim.01",
+              "score": 1
+            },
+            {
+              "id": "pb.digital_arrest.hook.03",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.ceo_wire_fraud.authority_claim.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.digital_arrest.hook.03",
+              "score": 1
+            },
+            {
+              "id": "pb.family_emergency.isolation.03",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.digital_arrest.authority_claim.02",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.digital_arrest.hook.03",
+              "score": 0.9937499761581421
+            },
+            {
+              "id": "pb.family_emergency.isolation.03",
+              "score": 0.7750000357627869
+            },
+            {
+              "id": "pb.digital_arrest.authority_claim.02",
+              "score": 0.7515152096748352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-playbooks-3e41579bdd",
+      "text": "for the legality check shift everything from your savings into the supervision account, it comes back to you after clearance",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.romance_advance_fee.authority_claim.03",
+              "score": 1
+            },
+            {
+              "id": "pb.romance_advance_fee.authority_claim.02",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.otp_harvest.extraction.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.otp_harvest.isolation.03",
+              "score": 1
+            },
+            {
+              "id": "pb.digital_arrest.extraction.02",
+              "score": 0.96875
+            },
+            {
+              "id": "pb.ceo_wire_fraud.authority_claim.01",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "pb.otp_harvest.isolation.03",
+              "score": 0.800000011920929
+            },
+            {
+              "id": "pb.digital_arrest.extraction.02",
+              "score": 0.7750000357627869
+            },
+            {
+              "id": "pb.ceo_wire_fraud.authority_claim.01",
+              "score": 0.7515152096748352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-ground-truth-3b80c11a2c",
+      "text": "please read me the code that just arrived",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0.029356002807617188,
+          "searchOrderStable": false,
+          "queryMaxDelta": 0.029356002807617188,
+          "queryOrderStable": false,
+          "first": [
+            {
+              "id": "gt.banking.02",
+              "score": 1
+            },
+            {
+              "id": "gt.corporate_payments.02",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.family_verification.01",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.payments_upi.04",
+              "score": 1
+            },
+            {
+              "id": "gt.telecom.02",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.corporate_payments.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0.004920601844787598,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0.004920601844787598,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.family_verification.03",
+              "score": 0.9016340374946594
+            },
+            {
+              "id": "gt.payments_upi.04",
+              "score": 0.800000011920929
+            },
+            {
+              "id": "gt.telecom.02",
+              "score": 0.7750000357627869
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-ground-truth-3b80c11a2c",
+      "text": "your parcel was seized by customs",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.customs_courier.02",
+              "score": 1
+            },
+            {
+              "id": "gt.customs_courier.01",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.customs_courier.04",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.customs_courier.02",
+              "score": 1
+            },
+            {
+              "id": "gt.customs_courier.01",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.customs_courier.05",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.customs_courier.02",
+              "score": 1
+            },
+            {
+              "id": "gt.customs_courier.01",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.customs_courier.05",
+              "score": 0.9338681697845459
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-ground-truth-3b80c11a2c",
+      "text": "hi mom, I landed safely",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0.03125,
+          "searchOrderStable": false,
+          "queryMaxDelta": 0.03125,
+          "queryOrderStable": false,
+          "first": [
+            {
+              "id": "gt.banking.04",
+              "score": 1
+            },
+            {
+              "id": "gt.family_verification.01",
+              "score": 0.96875
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.family_verification.01",
+              "score": 1
+            },
+            {
+              "id": "gt.customs_courier.04",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.courts_legal.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0.00625002384185791,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.family_verification.01",
+              "score": 1
+            },
+            {
+              "id": "gt.customs_courier.04",
+              "score": 0.7750000357627869
+            },
+            {
+              "id": "gt.courts_legal.03",
+              "score": 0.7515152096748352
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-ground-truth-3b80c11a2c",
+      "text": "you are not permitted to step out or phone anybody, the camera stays on while officers keep watching you, consider yourself in formal custody now",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.law_enforcement.02",
+              "score": 1
+            },
+            {
+              "id": "gt.tax_government.03",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.corporate_payments.04",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.law_enforcement.01",
+              "score": 1
+            },
+            {
+              "id": "gt.courts_legal.03",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.law_enforcement.03",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.law_enforcement.06",
+              "score": 0.906554639339447
+            },
+            {
+              "id": "gt.law_enforcement.01",
+              "score": 0.800000011920929
+            },
+            {
+              "id": "gt.courts_legal.03",
+              "score": 0.7750000357627869
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-ground-truth-3b80c11a2c",
+      "text": "this is the narcotics bureau, your identity documents were misused in a laundering racket and the magistrate has already signed papers against you",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.banking.02",
+              "score": 1
+            },
+            {
+              "id": "gt.law_enforcement.05",
+              "score": 0.96875
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.customs_courier.01",
+              "score": 1
+            },
+            {
+              "id": "gt.law_enforcement.03",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.tax_government.02",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.banking.02",
+              "score": 0.9085714221000671
+            },
+            {
+              "id": "gt.law_enforcement.05",
+              "score": 0.8826389312744141
+            },
+            {
+              "id": "gt.customs_courier.01",
+              "score": 0.800000011920929
+            }
+          ]
+        }
+      }
+    },
+    {
+      "index": "kavach-ground-truth-3b80c11a2c",
+      "text": "for the legality check shift everything from your savings into the supervision account, it comes back to you after clearance",
+      "embedMaxDelta": 0,
+      "alphas": {
+        "0": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.courts_legal.02",
+              "score": 1
+            },
+            {
+              "id": "gt.banking.04",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.family_verification.04",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "1": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.courts_legal.02",
+              "score": 1
+            },
+            {
+              "id": "gt.tax_government.01",
+              "score": 0.96875
+            },
+            {
+              "id": "gt.banking.08",
+              "score": 0.9393939971923828
+            }
+          ]
+        },
+        "0.8": {
+          "searchMaxDelta": 0,
+          "searchOrderStable": true,
+          "queryMaxDelta": 0,
+          "queryOrderStable": true,
+          "first": [
+            {
+              "id": "gt.courts_legal.02",
+              "score": 1
+            },
+            {
+              "id": "gt.banking.04",
+              "score": 0.9231618046760559
+            },
+            {
+              "id": "gt.tax_government.01",
+              "score": 0.7750000357627869
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
