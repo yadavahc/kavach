@@ -60,7 +60,7 @@ The [latency A/B](#latency-ab-same-calls-simulated-hosted-vector-db) quantifies 
 | **Script retrieval engine** | The rolling 8 s transcript window is matched against 138 playbook fragments every 300 ms. The match panel shows the pattern, its cosine similarity, its Moss rank and the stage of the script. |
 | **Atomic claim check** | Finished caller utterances are split into assertions and checked against 50 published counter-facts: *contradicted*, *consistent* or *unverifiable*, with the source. |
 | **Voice Circle** | Trusted contacts, a household passphrase (salted SHA-256, stored only in the browser) and an optional coarse voice signature. When a call follows a script that impersonates someone you know, it walks you through verifying outside the call. |
-| **Counter-line** | A calm sentence the person can say, pre-written for every family and stage so it renders the instant the warning fires. Optional LLM variants (Gemini, or Claude as a fallback) receive only the family and stage, never the transcript. |
+| **Counter-line** | A calm sentence the person can say, pre-written for every family and stage so it renders the instant the warning fires. Optional LLM variants (Groq by default, or Gemini or Claude) arrive in under a second and receive only the family and stage, never the transcript. |
 | **Coercion pressure meter** | Urgency, isolation, secrecy and authority, smoothed and plotted across the call. |
 | **Evidence pack** | Timestamped transcript, matched patterns, claim verdicts with sources, the stage timeline and pressure curve, exported as JSON and a printable PDF with a SHA-256 digest. Built entirely on the device. |
 | **Replay eval bench** | Ten labelled calls (six scam families, four benign hard negatives) through the real pipeline: precision, recall, F1, lead time and retrieval p50/p99/p99.9. |
@@ -210,7 +210,7 @@ Requirements: Node 20+ and Chrome or Edge (for the headless verification scripts
 
 ```bash
 npm install
-cp .env.example .env.local            # set MOSS_PROJECT_ID and MOSS_PROJECT_KEY (GEMINI_API_KEY optional)
+cp .env.example .env.local            # set MOSS_PROJECT_ID and MOSS_PROJECT_KEY (GROQ_API_KEY optional)
 npm run corpus:validate               # schema, coverage and leakage checks (offline)
 npm run index:build                   # build + publish both Moss indexes, write corpus/dist/manifest.json
 npm run corpus:embed                  # document embeddings for cosine re-scoring (headless Chrome)
@@ -235,7 +235,7 @@ npm run dev                           # http://localhost:3000
 
 The app deploys to Vercel as a standard Next.js 16 project:
 
-1. Import the repository and set `MOSS_PROJECT_ID` and `MOSS_PROJECT_KEY` (and optionally `GEMINI_API_KEY` for counter-line variants) as environment variables.
+1. Import the repository and set `MOSS_PROJECT_ID` and `MOSS_PROJECT_KEY` (and optionally `GROQ_API_KEY`, `GEMINI_API_KEY` or `ANTHROPIC_API_KEY` for counter-line variants) as environment variables.
 2. The default build command, `npm run build`, runs the vendor step that copies the WASM runtimes into `public/`.
 3. `next.config.ts` serves `/live`, `/bench` and the runtime assets cross-origin isolated (COOP/COEP), for 5 µs timers and ONNX Runtime threads.
 

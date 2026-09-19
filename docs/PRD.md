@@ -76,7 +76,7 @@ Moss is load-bearing, not a swapped dependency:
 | 1 | Script retrieval engine | Rolling window → playbook index every 300 ms; match panel with pattern, score and stage | Done; Moss search p50 0.16 ms |
 | 2 | Atomic claim check | Assertions → ground truth, verdict with source | Done; 75% on dev, **42% on held-out** (weak) |
 | 3 | Voice Circle | Trusted contacts, passphrase, out-of-band prompt on impersonation scripts | Done; voice signature is a hint, not proof |
-| 4 | Counter-line | Pre-written per family and stage, renders instantly | Done; 40 lines, optional LLM variants (Gemini) |
+| 4 | Counter-line | Pre-written per family and stage, renders instantly | Done; 40 lines, optional LLM variants (Groq, about 0.7 s) |
 | 5 | Coercion pressure meter | Continuous score over four signals across the call | Done |
 | 6 | Evidence pack | Timestamped transcript, patterns, confidences, pressure curve; JSON + PDF | Done; SHA-256 digest, built on device |
 | 7 | Replay eval bench | Labelled scam and benign calls, P/R/F1 and retrieval p50/p99/p99.9 | Done; in-app and `npm run eval` |

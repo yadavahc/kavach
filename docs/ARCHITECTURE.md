@@ -32,7 +32,7 @@ flowchart TB
 - **Server: thin.**
   - Index build and publishing happen at build time.
   - `/api/moss-config` serves the Moss credentials the browser SDK needs.
-  - An optional server action generates counter-line variants with an LLM (Gemini by default, Claude as a fallback). It sends only the scam family and stage.
+  - An optional server action generates counter-line variants with an LLM (Groq by default, then Gemini, then Claude, by whichever key is set). It sends only the scam family and stage.
 
 ## 2. Corpus
 
@@ -163,7 +163,12 @@ Each assertion is embedded and searched against the ground-truth index. The best
 
 ## 6. Features on top of the pipeline
 
-- **Counter-lines** (`lib/counter-lines/lines.ts`): 40 pre-written lines, one per family and stage, each with a "then" instruction. They render with the warning, with no network call. `app/actions/counter-lines.ts` optionally asks Gemini (`gemini-3.6-flash`, JSON-schema output, one retry on overload) for alternatives, or Claude (`claude-opus-5`) when only an Anthropic key is set. Either way it sends only the family and stage.
+- **Counter-lines** (`lib/counter-lines/lines.ts`): 40 pre-written lines, one per family and stage, each with a "then" instruction. They render with the warning, with no network call. `app/actions/counter-lines.ts` optionally asks an LLM for alternatives, using the first key that is set:
+  - Groq (`openai/gpt-oss-120b`, strict JSON-schema output, about 0.7 s end to end);
+  - Gemini (`gemini-3.6-flash`, one retry on overload);
+  - Claude (`claude-opus-5`).
+
+  Whichever provider is used, it receives only the family and stage.
 - **Voice Circle** (`lib/voice-circle/`): contacts and a salted SHA-256 passphrase in `localStorage`, plus a coarse voice signature: loudness-normalised mean and spread of 32 log-spaced band energies. The signature is explicitly **not** an authenticator, since cloned voices are built to match such signals. The prompt steers the person to the passphrase and a call-back on a saved number.
 - **Evidence pack** (`lib/evidence/`): JSON with a SHA-256 digest over canonical (sorted-key) JSON, and a printable PDF rendered in the browser with pdf-lib. Both are built on the device. The pack lists reporting channels for India, the US and the UK.
 
