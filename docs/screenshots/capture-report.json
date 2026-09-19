@@ -1,0 +1,423 @@
+{
+  "base": "http://localhost:3217",
+  "capturedAt": "2026-09-19T15:33:30.386Z",
+  "live": {
+    "fixture": "fx.01.digital_arrest_parcel",
+    "warnedAtCallTime": "0:17",
+    "header": "Kavach Live Live Eval bench & A/B Architecture MOSS SEARCH P50 0.31ms SEARCH P99 11ms EMBED P50 189ms RE-SCORE P50 0.02ms ROUND TRIP P50 200ms QUERIES 99 isolated ORT ×4 timer 5µs"
+  },
+  "bench": {
+    "summary": {
+      "calls": 10,
+      "tp": 6,
+      "fp": 2,
+      "fn": 0,
+      "tn": 2,
+      "precision": 0.75,
+      "recall": 1,
+      "f1": 0.8571428571428571,
+      "scamWarnedAnyTime": 6,
+      "familyAccuracy": 1,
+      "meanLeadSeconds": 36.53461916675168,
+      "stageRecall": 0.896551724137931,
+      "claimAccuracy": 0.42105263157894735,
+      "claimAlignment": 0.7894736842105263,
+      "latency": {
+        "searchMs": {
+          "n": 1919,
+          "min": 0.14499998092651367,
+          "mean": 0.6704142772014592,
+          "p50": 0.2799999713897705,
+          "p90": 0.6950000524520874,
+          "p99": 12.644999980926514,
+          "p999": 28.81499993801117,
+          "max": 32.05999994277954
+        },
+        "embedMs": {
+          "n": 1919,
+          "min": 7.409999966621399,
+          "mean": 103.97416102053785,
+          "p50": 101.49500000476837,
+          "p90": 182.29999995231628,
+          "p99": 353.47500002384186,
+          "p999": 496.75,
+          "max": 530.6299999952316
+        },
+        "roundTripMs": {
+          "n": 1919,
+          "min": 8.34500002861023,
+          "mean": 106.00755862515068,
+          "p50": 105.91999995708466,
+          "p90": 184.0699999332428,
+          "p99": 355.0049999952316,
+          "p999": 497.80999994277954,
+          "max": 531.7900000810623
+        },
+        "networkMs": {
+          "n": 1919,
+          "min": 0,
+          "mean": 0,
+          "p50": 0,
+          "p90": 0,
+          "p99": 0,
+          "p999": 0,
+          "max": 0
+        }
+      }
+    },
+    "outcomes": [
+      {
+        "fixtureId": "fx.07.benign_bank_fraud_alert",
+        "title": "Genuine bank fraud-monitoring call",
+        "label": "benign",
+        "family": null,
+        "warned": true,
+        "warningAt": 55.65550499987586,
+        "warnedFamily": "otp_harvest",
+        "familyAcceptable": null,
+        "onsetAt": null,
+        "extractionAt": null,
+        "beforeExtraction": null,
+        "leadSeconds": null,
+        "sinceOnsetSeconds": null,
+        "stages": {
+          "annotated": [],
+          "reached": [
+            "isolation",
+            "hook",
+            "extraction"
+          ]
+        },
+        "claims": {
+          "annotated": 1,
+          "matched": 1,
+          "correct": 1
+        },
+        "queries": 183,
+        "callSeconds": 57,
+        "wallMs": 6060.159999966621
+      },
+      {
+        "fixtureId": "fx.08.benign_furniture_delivery",
+        "title": "Furniture delivery partner at the society gate",
+        "label": "benign",
+        "family": null,
+        "warned": false,
+        "warningAt": null,
+        "warnedFamily": null,
+        "familyAcceptable": null,
+        "onsetAt": null,
+        "extractionAt": null,
+        "beforeExtraction": null,
+        "leadSeconds": null,
+        "sinceOnsetSeconds": null,
+        "stages": {
+          "annotated": [],
+          "reached": [
+            "hook"
+          ]
+        },
+        "claims": {
+          "annotated": 0,
+          "matched": 0,
+          "correct": 0
+        },
+        "queries": 126,
+        "callSeconds": 42,
+        "wallMs": 18571.225000023842
+      },
+      {
+        "fixtureId": "fx.09.benign_family_surprise_gift",
+        "title": "Daughter organising a surprise birthday dinner",
+        "label": "benign",
+        "family": null,
+        "warned": false,
+        "warningAt": null,
+        "warnedFamily": null,
+        "familyAcceptable": null,
+        "onsetAt": null,
+        "extractionAt": null,
+        "beforeExtraction": null,
+        "leadSeconds": null,
+        "sinceOnsetSeconds": null,
+        "stages": {
+          "annotated": [],
+          "reached": [
+            "extraction"
+          ]
+        },
+        "claims": {
+          "annotated": 0,
+          "matched": 0,
+          "correct": 0
+        },
+        "queries": 134,
+        "callSeconds": 47,
+        "wallMs": 14793
+      },
+      {
+        "fixtureId": "fx.10.benign_supplier_callback",
+        "title": "Accounts payable verifying a bank-change email by callback",
+        "label": "benign",
+        "family": null,
+        "warned": true,
+        "warningAt": 25.57437999999527,
+        "warnedFamily": "ceo_wire_fraud",
+        "familyAcceptable": null,
+        "onsetAt": null,
+        "extractionAt": null,
+        "beforeExtraction": null,
+        "leadSeconds": null,
+        "sinceOnsetSeconds": null,
+        "stages": {
+          "annotated": [],
+          "reached": [
+            "hook",
+            "extraction",
+            "authority_claim",
+            "urgency"
+          ]
+        },
+        "claims": {
+          "annotated": 1,
+          "matched": 1,
+          "correct": 1
+        },
+        "queries": 146,
+        "callSeconds": 47.5,
+        "wallMs": 15083.569999933243
+      },
+      {
+        "fixtureId": "fx.01.digital_arrest_parcel",
+        "title": "Courier parcel hook escalating to digital arrest",
+        "label": "scam",
+        "family": "digital_arrest",
+        "warned": true,
+        "warningAt": 16.39007499992849,
+        "warnedFamily": "parcel_customs",
+        "familyAcceptable": true,
+        "onsetAt": 9,
+        "extractionAt": 67.5,
+        "beforeExtraction": true,
+        "leadSeconds": 51.10992500007151,
+        "sinceOnsetSeconds": 7.3900749999284905,
+        "stages": {
+          "annotated": [
+            "hook",
+            "authority_claim",
+            "isolation",
+            "urgency",
+            "extraction"
+          ],
+          "reached": [
+            "hook",
+            "authority_claim",
+            "isolation"
+          ]
+        },
+        "claims": {
+          "annotated": 5,
+          "matched": 5,
+          "correct": 3
+        },
+        "queries": 289,
+        "callSeconds": 91,
+        "wallMs": 36776.080000042915
+      },
+      {
+        "fixtureId": "fx.02.otp_harvest_card_alert",
+        "title": "Fake card-security call harvesting an OTP",
+        "label": "scam",
+        "family": "otp_harvest",
+        "warned": true,
+        "warningAt": 9.186549999952316,
+        "warnedFamily": "otp_harvest",
+        "familyAcceptable": true,
+        "onsetAt": 32.5,
+        "extractionAt": 43.5,
+        "beforeExtraction": true,
+        "leadSeconds": 34.31345000004768,
+        "sinceOnsetSeconds": -23.313450000047684,
+        "stages": {
+          "annotated": [
+            "hook",
+            "authority_claim",
+            "urgency",
+            "isolation",
+            "extraction"
+          ],
+          "reached": [
+            "isolation",
+            "hook",
+            "authority_claim",
+            "urgency",
+            "extraction"
+          ]
+        },
+        "claims": {
+          "annotated": 2,
+          "matched": 2,
+          "correct": 1
+        },
+        "queries": 206,
+        "callSeconds": 64,
+        "wallMs": 20106.915000081062
+      },
+      {
+        "fixtureId": "fx.03.ceo_voice_clone_wire",
+        "title": "Cloned executive voice requesting an off-system wire",
+        "label": "scam",
+        "family": "ceo_wire_fraud",
+        "warned": true,
+        "warningAt": 28.108844999909444,
+        "warnedFamily": "ceo_wire_fraud",
+        "familyAcceptable": true,
+        "onsetAt": 22,
+        "extractionAt": 55.5,
+        "beforeExtraction": true,
+        "leadSeconds": 27.391155000090556,
+        "sinceOnsetSeconds": 6.108844999909444,
+        "stages": {
+          "annotated": [
+            "hook",
+            "authority_claim",
+            "isolation",
+            "urgency",
+            "extraction"
+          ],
+          "reached": [
+            "hook",
+            "isolation",
+            "extraction",
+            "authority_claim"
+          ]
+        },
+        "claims": {
+          "annotated": 2,
+          "matched": 1,
+          "correct": 0
+        },
+        "queries": 202,
+        "callSeconds": 66,
+        "wallMs": 20666.150000095367
+      },
+      {
+        "fixtureId": "fx.04.tech_support_cold_call",
+        "title": "Cold-call 'Windows security centre' remote access scam",
+        "label": "scam",
+        "family": "tech_support",
+        "warned": true,
+        "warningAt": 13.876664999961864,
+        "warnedFamily": "tech_support",
+        "familyAcceptable": true,
+        "onsetAt": 10,
+        "extractionAt": 52.5,
+        "beforeExtraction": true,
+        "leadSeconds": 38.62333500003814,
+        "sinceOnsetSeconds": 3.8766649999618643,
+        "stages": {
+          "annotated": [
+            "hook",
+            "authority_claim",
+            "isolation",
+            "urgency",
+            "extraction"
+          ],
+          "reached": [
+            "hook",
+            "authority_claim",
+            "urgency",
+            "isolation",
+            "extraction"
+          ]
+        },
+        "claims": {
+          "annotated": 2,
+          "matched": 1,
+          "correct": 0
+        },
+        "queries": 224,
+        "callSeconds": 72,
+        "wallMs": 21449.9699999094
+      },
+      {
+        "fixtureId": "fx.05.family_emergency_grandson",
+        "title": "Voice-cloned grandson in a car accident, cash bail courier",
+        "label": "scam",
+        "family": "family_emergency",
+        "warned": true,
+        "warningAt": 26.36474499976639,
+        "warnedFamily": "family_emergency",
+        "familyAcceptable": true,
+        "onsetAt": 19,
+        "extractionAt": 57.5,
+        "beforeExtraction": true,
+        "leadSeconds": 31.13525500023361,
+        "sinceOnsetSeconds": 7.3647449997663905,
+        "stages": {
+          "annotated": [
+            "hook",
+            "isolation",
+            "authority_claim",
+            "urgency",
+            "extraction"
+          ],
+          "reached": [
+            "hook",
+            "isolation",
+            "authority_claim",
+            "urgency",
+            "extraction"
+          ]
+        },
+        "claims": {
+          "annotated": 3,
+          "matched": 2,
+          "correct": 1
+        },
+        "queries": 245,
+        "callSeconds": 80,
+        "wallMs": 28273.75
+      },
+      {
+        "fixtureId": "fx.06.kyc_expiry_remote_app",
+        "title": "Bank KYC 'new RBI norms' call pushing a screen-sharing app",
+        "label": "scam",
+        "family": "kyc_expiry",
+        "warned": true,
+        "warningAt": 5.865404999971388,
+        "warnedFamily": "kyc_expiry",
+        "familyAcceptable": true,
+        "onsetAt": 11,
+        "extractionAt": 42.5,
+        "beforeExtraction": true,
+        "leadSeconds": 36.63459500002861,
+        "sinceOnsetSeconds": -5.134595000028612,
+        "stages": {
+          "annotated": [
+            "hook",
+            "urgency",
+            "isolation",
+            "extraction"
+          ],
+          "reached": [
+            "isolation",
+            "extraction",
+            "hook",
+            "urgency",
+            "authority_claim"
+          ]
+        },
+        "claims": {
+          "annotated": 3,
+          "matched": 2,
+          "correct": 1
+        },
+        "queries": 234,
+        "callSeconds": 72,
+        "wallMs": 26174.40999996662
+      }
+    ]
+  },
+  "problems": []
+}
