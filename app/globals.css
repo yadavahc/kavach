@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@theme {
+  --color-ink: #07080b;
+  --color-panel: #0d0f15;
+  --color-panel-2: #131620;
+  --color-line: #222634;
+  --color-fg: #e9ebf1;
+  --color-muted: #8b91a3;
+  --color-faint: #5b6173;
+  --color-danger: #ff4d5e;
+  --color-warn: #ffb224;
+  --color-ok: #36d399;
+  --color-accent: #7aa2ff;
+  --color-shield: #9ad7ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-accent) 35%, transparent);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.panel {
+  border: 1px solid var(--color-line);
+  background: var(--color-panel);
+  border-radius: 14px;
+}
+
+/* Compositor-only pulse (transform + opacity): an animated box-shadow repaints every
+   frame and competes with the embedding threads on low-end devices. */
+@keyframes kavach-ring {
+  0% {
+    opacity: 0.9;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.025);
+  }
+}
+
+.alarm {
+  position: relative;
+}
+
+.alarm::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: 2px solid color-mix(in oklab, var(--color-danger) 70%, transparent);
+  pointer-events: none;
+  will-change: transform, opacity;
+  animation: kavach-ring 1.6s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

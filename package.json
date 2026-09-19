@@ -1,0 +1,48 @@
+{
+  "name": "kavach-live",
+  "version": "0.1.0",
+  "scripts": {
+    "corpus:validate": "tsx scripts/validate-corpus.ts",
+    "index:build": "tsx scripts/build-index.ts",
+    "index:verify": "tsx scripts/verify-index.ts",
+    "typecheck": "tsc --noEmit",
+    "corpus:sources": "tsx scripts/check-sources.ts",
+    "index:plan": "tsx scripts/build-index.ts --dry-run",
+    "index:verify:browser": "tsx scripts/verify-browser.ts",
+    "corpus:embed": "tsx scripts/embed-corpus.ts",
+    "vendor": "tsx scripts/copy-vendor.ts && tsx scripts/bundle-runtime.ts",
+    "predev": "npm run vendor",
+    "dev": "next dev",
+    "prebuild": "npm run vendor",
+    "build": "next build",
+    "start": "next start",
+    "calibrate": "tsx scripts/calibrate.ts --set dev",
+    "eval": "tsx scripts/calibrate.ts --set fixtures"
+  },
+  "description": "Real-time scam-call interception via on-device semantic retrieval",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.126.0",
+    "@moss-dev/moss": "^1.7.1",
+    "@moss-dev/moss-web": "^1.0.1",
+    "next": "^16.3.5",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.186.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^22.20.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@types/three": "^0.186.0",
+    "esbuild": "^0.28.2",
+    "puppeteer-core": "^25.11.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3"
+  }
+}

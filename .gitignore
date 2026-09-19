@@ -1,0 +1,18 @@
+node_modules/
+.next/
+out/
+.vercel/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+next-env.d.ts
+.moss-cache/
+
+# generated from node_modules and corpus/dist by `npm run vendor`
+public/vendor/
+public/data/
+
+# agent instruction files generated locally by `next dev`
+AGENTS.md
+CLAUDE.md
