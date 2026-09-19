@@ -1,0 +1,1127 @@
+{
+  "generatedAt": "2026-09-19T15:23:15.232Z",
+  "set": "fixtures",
+  "corpusVersion": "3e41579bdd.3b80c11a2c",
+  "runtime": {
+    "crossOriginIsolated": true,
+    "hardwareConcurrency": 16,
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "timerResolutionMs": 0.004999995231628418,
+    "ortNumThreads": 4,
+    "initMs": 2956.3450000286102,
+    "loadIndexMs": {
+      "kavach-playbooks-3e41579bdd": 3563.8250000476837,
+      "kavach-ground-truth-3b80c11a2c": 2074.679999947548
+    }
+  },
+  "detection": {
+    "windowSeconds": 8,
+    "tickMs": 300,
+    "alpha": 1,
+    "topK": 5,
+    "claimTopK": 3,
+    "minWindowWords": 6,
+    "decisionMinWords": 8,
+    "cosineFloor": 0.3,
+    "cosineCeiling": 0.75,
+    "scamMin": 0.45,
+    "benignMargin": 0.04,
+    "warnConsecutive": 2,
+    "warnMinSpanSeconds": 2.5,
+    "requireCoercion": 0,
+    "minDistinctStages": 2,
+    "watchHoldSeconds": 4,
+    "claimMatch": 0.38,
+    "pressureTauSeconds": 3
+  },
+  "summary": {
+    "calls": 10,
+    "tp": 6,
+    "fp": 2,
+    "fn": 0,
+    "tn": 2,
+    "precision": 0.75,
+    "recall": 1,
+    "f1": 0.8571428571428571,
+    "scamWarnedAnyTime": 6,
+    "familyAccuracy": 1,
+    "meanLeadSeconds": 36.598076666653135,
+    "stageRecall": 0.896551724137931,
+    "claimAccuracy": 0.42105263157894735,
+    "claimAlignment": 0.7894736842105263
+  },
+  "outcomes": [
+    {
+      "fixtureId": "fx.07.benign_bank_fraud_alert",
+      "title": "Genuine bank fraud-monitoring call",
+      "label": "benign",
+      "family": null,
+      "warned": true,
+      "warningAt": 55.84594499981386,
+      "warnedFamily": "otp_harvest",
+      "familyAcceptable": null,
+      "onsetAt": null,
+      "extractionAt": null,
+      "beforeExtraction": null,
+      "leadSeconds": null,
+      "sinceOnsetSeconds": null,
+      "stages": {
+        "annotated": [],
+        "reached": [
+          "isolation",
+          "hook",
+          "extraction"
+        ]
+      },
+      "claims": {
+        "annotated": 1,
+        "matched": 1,
+        "correct": 1
+      },
+      "queries": 183,
+      "callSeconds": 57,
+      "wallMs": 2265.5835000000006
+    },
+    {
+      "fixtureId": "fx.08.benign_furniture_delivery",
+      "title": "Furniture delivery partner at the society gate",
+      "label": "benign",
+      "family": null,
+      "warned": false,
+      "warningAt": null,
+      "warnedFamily": null,
+      "familyAcceptable": null,
+      "onsetAt": null,
+      "extractionAt": null,
+      "beforeExtraction": null,
+      "leadSeconds": null,
+      "sinceOnsetSeconds": null,
+      "stages": {
+        "annotated": [],
+        "reached": [
+          "hook"
+        ]
+      },
+      "claims": {
+        "annotated": 0,
+        "matched": 0,
+        "correct": 0
+      },
+      "queries": 129,
+      "callSeconds": 42,
+      "wallMs": 1567.6903000000002
+    },
+    {
+      "fixtureId": "fx.09.benign_family_surprise_gift",
+      "title": "Daughter organising a surprise birthday dinner",
+      "label": "benign",
+      "family": null,
+      "warned": false,
+      "warningAt": null,
+      "warnedFamily": null,
+      "familyAcceptable": null,
+      "onsetAt": null,
+      "extractionAt": null,
+      "beforeExtraction": null,
+      "leadSeconds": null,
+      "sinceOnsetSeconds": null,
+      "stages": {
+        "annotated": [],
+        "reached": [
+          "extraction"
+        ]
+      },
+      "claims": {
+        "annotated": 0,
+        "matched": 0,
+        "correct": 0
+      },
+      "queries": 132,
+      "callSeconds": 47,
+      "wallMs": 1420.5954999999994
+    },
+    {
+      "fixtureId": "fx.10.benign_supplier_callback",
+      "title": "Accounts payable verifying a bank-change email by callback",
+      "label": "benign",
+      "family": null,
+      "warned": true,
+      "warningAt": 24.93148000001911,
+      "warnedFamily": "ceo_wire_fraud",
+      "familyAcceptable": null,
+      "onsetAt": null,
+      "extractionAt": null,
+      "beforeExtraction": null,
+      "leadSeconds": null,
+      "sinceOnsetSeconds": null,
+      "stages": {
+        "annotated": [],
+        "reached": [
+          "hook",
+          "extraction",
+          "authority_claim",
+          "urgency"
+        ]
+      },
+      "claims": {
+        "annotated": 1,
+        "matched": 1,
+        "correct": 1
+      },
+      "queries": 144,
+      "callSeconds": 47.5,
+      "wallMs": 1705.8781999999992
+    },
+    {
+      "fixtureId": "fx.01.digital_arrest_parcel",
+      "title": "Courier parcel hook escalating to digital arrest",
+      "label": "scam",
+      "family": "digital_arrest",
+      "warned": true,
+      "warningAt": 16.815639999985713,
+      "warnedFamily": "parcel_customs",
+      "familyAcceptable": true,
+      "onsetAt": 9,
+      "extractionAt": 67.5,
+      "beforeExtraction": true,
+      "leadSeconds": 50.68436000001429,
+      "sinceOnsetSeconds": 7.815639999985713,
+      "stages": {
+        "annotated": [
+          "hook",
+          "authority_claim",
+          "isolation",
+          "urgency",
+          "extraction"
+        ],
+        "reached": [
+          "hook",
+          "authority_claim",
+          "isolation"
+        ]
+      },
+      "claims": {
+        "annotated": 5,
+        "matched": 5,
+        "correct": 3
+      },
+      "queries": 297,
+      "callSeconds": 91,
+      "wallMs": 3282.179100000001
+    },
+    {
+      "fixtureId": "fx.02.otp_harvest_card_alert",
+      "title": "Fake card-security call harvesting an OTP",
+      "label": "scam",
+      "family": "otp_harvest",
+      "warned": true,
+      "warningAt": 8.724825000047682,
+      "warnedFamily": "otp_harvest",
+      "familyAcceptable": true,
+      "onsetAt": 32.5,
+      "extractionAt": 43.5,
+      "beforeExtraction": true,
+      "leadSeconds": 34.77517499995232,
+      "sinceOnsetSeconds": -23.77517499995232,
+      "stages": {
+        "annotated": [
+          "hook",
+          "authority_claim",
+          "urgency",
+          "isolation",
+          "extraction"
+        ],
+        "reached": [
+          "isolation",
+          "hook",
+          "authority_claim",
+          "urgency",
+          "extraction"
+        ]
+      },
+      "claims": {
+        "annotated": 2,
+        "matched": 2,
+        "correct": 1
+      },
+      "queries": 206,
+      "callSeconds": 64,
+      "wallMs": 2421.3153999999995
+    },
+    {
+      "fixtureId": "fx.03.ceo_voice_clone_wire",
+      "title": "Cloned executive voice requesting an off-system wire",
+      "label": "scam",
+      "family": "ceo_wire_fraud",
+      "warned": true,
+      "warningAt": 28.216625000000043,
+      "warnedFamily": "ceo_wire_fraud",
+      "familyAcceptable": true,
+      "onsetAt": 22,
+      "extractionAt": 55.5,
+      "beforeExtraction": true,
+      "leadSeconds": 27.283374999999957,
+      "sinceOnsetSeconds": 6.216625000000043,
+      "stages": {
+        "annotated": [
+          "hook",
+          "authority_claim",
+          "isolation",
+          "urgency",
+          "extraction"
+        ],
+        "reached": [
+          "hook",
+          "isolation",
+          "extraction",
+          "authority_claim"
+        ]
+      },
+      "claims": {
+        "annotated": 2,
+        "matched": 1,
+        "correct": 0
+      },
+      "queries": 202,
+      "callSeconds": 66,
+      "wallMs": 2594.777100000003
+    },
+    {
+      "fixtureId": "fx.04.tech_support_cold_call",
+      "title": "Cold-call 'Windows security centre' remote access scam",
+      "label": "scam",
+      "family": "tech_support",
+      "warned": true,
+      "warningAt": 13.814834999918949,
+      "warnedFamily": "tech_support",
+      "familyAcceptable": true,
+      "onsetAt": 10,
+      "extractionAt": 52.5,
+      "beforeExtraction": true,
+      "leadSeconds": 38.68516500008105,
+      "sinceOnsetSeconds": 3.814834999918949,
+      "stages": {
+        "annotated": [
+          "hook",
+          "authority_claim",
+          "isolation",
+          "urgency",
+          "extraction"
+        ],
+        "reached": [
+          "hook",
+          "authority_claim",
+          "urgency",
+          "isolation",
+          "extraction"
+        ]
+      },
+      "claims": {
+        "annotated": 2,
+        "matched": 1,
+        "correct": 0
+      },
+      "queries": 225,
+      "callSeconds": 72,
+      "wallMs": 2586.0456000000013
+    },
+    {
+      "fixtureId": "fx.05.family_emergency_grandson",
+      "title": "Voice-cloned grandson in a car accident, cash bail courier",
+      "label": "scam",
+      "family": "family_emergency",
+      "warned": true,
+      "warningAt": 26.124630000114482,
+      "warnedFamily": "family_emergency",
+      "familyAcceptable": true,
+      "onsetAt": 19,
+      "extractionAt": 57.5,
+      "beforeExtraction": true,
+      "leadSeconds": 31.375369999885518,
+      "sinceOnsetSeconds": 7.124630000114482,
+      "stages": {
+        "annotated": [
+          "hook",
+          "isolation",
+          "authority_claim",
+          "urgency",
+          "extraction"
+        ],
+        "reached": [
+          "hook",
+          "isolation",
+          "authority_claim",
+          "urgency",
+          "extraction"
+        ]
+      },
+      "claims": {
+        "annotated": 3,
+        "matched": 2,
+        "correct": 1
+      },
+      "queries": 245,
+      "callSeconds": 80,
+      "wallMs": 3103.7288999999982
+    },
+    {
+      "fixtureId": "fx.06.kyc_expiry_remote_app",
+      "title": "Bank KYC 'new RBI norms' call pushing a screen-sharing app",
+      "label": "scam",
+      "family": "kyc_expiry",
+      "warned": true,
+      "warningAt": 5.714985000014304,
+      "warnedFamily": "kyc_expiry",
+      "familyAcceptable": true,
+      "onsetAt": 11,
+      "extractionAt": 42.5,
+      "beforeExtraction": true,
+      "leadSeconds": 36.7850149999857,
+      "sinceOnsetSeconds": -5.285014999985696,
+      "stages": {
+        "annotated": [
+          "hook",
+          "urgency",
+          "isolation",
+          "extraction"
+        ],
+        "reached": [
+          "isolation",
+          "extraction",
+          "hook",
+          "urgency",
+          "authority_claim"
+        ]
+      },
+      "claims": {
+        "annotated": 3,
+        "matched": 2,
+        "correct": 1
+      },
+      "queries": 237,
+      "callSeconds": 72,
+      "wallMs": 2760.464799999998
+    }
+  ],
+  "retrievalLatency": {
+    "embedMs": {
+      "n": 1930,
+      "min": 3.965000033378601,
+      "mean": 10.241007772504975,
+      "p50": 9.84500002861023,
+      "p90": 12.550000071525574,
+      "p99": 18.399999976158142,
+      "p999": 43.52999997138977,
+      "max": 45.174999952316284
+    },
+    "searchMs": {
+      "n": 1930,
+      "min": 0.12000000476837158,
+      "mean": 0.1695259054090075,
+      "p50": 0.16499996185302734,
+      "p90": 0.19999992847442627,
+      "p99": 0.2999999523162842,
+      "p999": 0.5499999523162842,
+      "max": 0.6150000095367432
+    },
+    "rescoreMs": {
+      "n": 1930,
+      "min": 0,
+      "mean": 0.008523316210415697,
+      "p50": 0.009999990463256836,
+      "p90": 0.014999985694885254,
+      "p99": 0.019999980926513672,
+      "p999": 0.034999966621398926,
+      "max": 0.03500008583068848
+    },
+    "totalMs": {
+      "n": 1930,
+      "min": 4.120000004768372,
+      "mean": 10.419056994124398,
+      "p50": 10.034999966621399,
+      "p90": 12.755000114440918,
+      "p99": 18.575000047683716,
+      "p999": 43.68500006198883,
+      "max": 45.360000014305115
+    }
+  },
+  "latencyAB": [
+    {
+      "profile": "same-region",
+      "medianRttMs": 80,
+      "sigma": 0.3,
+      "call": "fx.01.digital_arrest_parcel",
+      "onDevice": {
+        "warningAt": 16.815639999985713,
+        "leadSeconds": 50.68436000001429,
+        "queries": 297,
+        "roundTripMs": {
+          "n": 281,
+          "min": 4.264999985694885,
+          "mean": 9.787010676071738,
+          "p50": 9.56000006198883,
+          "p90": 11.080000042915344,
+          "p99": 22.229999899864197,
+          "p999": 45.360000014305115,
+          "max": 45.360000014305115
+        }
+      },
+      "hosted": {
+        "warningAt": 16.663190237117306,
+        "leadSeconds": 50.836809762882694,
+        "queries": 297,
+        "roundTripMs": {
+          "n": 281,
+          "min": 37.10830882121655,
+          "mean": 93.41340885950801,
+          "p50": 88.70821566259929,
+          "p90": 124.69744073768621,
+          "p99": 175.85725409263296,
+          "p999": 210.7284880479936,
+          "max": 210.7284880479936
+        }
+      },
+      "ttfwDeltaSeconds": -0.1524497628684074
+    },
+    {
+      "profile": "same-region",
+      "medianRttMs": 80,
+      "sigma": 0.3,
+      "call": "fx.02.otp_harvest_card_alert",
+      "onDevice": {
+        "warningAt": 8.724825000047682,
+        "leadSeconds": 34.77517499995232,
+        "queries": 206,
+        "roundTripMs": {
+          "n": 195,
+          "min": 4.120000004768372,
+          "mean": 10.117820511108789,
+          "p50": 9.825000047683716,
+          "p90": 12.59499990940094,
+          "p99": 18.97000002861023,
+          "p999": 21.570000052452087,
+          "max": 21.570000052452087
+        }
+      },
+      "hosted": {
+        "warningAt": 8.943428294156071,
+        "leadSeconds": 34.55657170584393,
+        "queries": 208,
+        "roundTripMs": {
+          "n": 197,
+          "min": 37.09330895473096,
+          "mean": 93.98656824955296,
+          "p50": 87.29203959781654,
+          "p90": 128.10380543769355,
+          "p99": 172.9911243233291,
+          "p999": 192.4922542023055,
+          "max": 192.4922542023055
+        }
+      },
+      "ttfwDeltaSeconds": 0.21860329410838908
+    },
+    {
+      "profile": "same-region",
+      "medianRttMs": 80,
+      "sigma": 0.3,
+      "call": "fx.03.ceo_voice_clone_wire",
+      "onDevice": {
+        "warningAt": 28.216625000000043,
+        "leadSeconds": 27.283374999999957,
+        "queries": 202,
+        "roundTripMs": {
+          "n": 199,
+          "min": 4.909999966621399,
+          "mean": 11.398517587077079,
+          "p50": 10.575000047683716,
+          "p90": 15.589999914169312,
+          "p99": 21.574999928474426,
+          "p999": 31.7849999666214,
+          "max": 31.7849999666214
+        }
+      },
+      "hosted": {
+        "warningAt": 28.040968484790312,
+        "leadSeconds": 27.459031515209688,
+        "queries": 199,
+        "roundTripMs": {
+          "n": 196,
+          "min": 38.54830887843701,
+          "mean": 94.81049450253178,
+          "p50": 87.88612937188181,
+          "p90": 134.6778533521278,
+          "p99": 173.61112432809747,
+          "p999": 175.80725414031667,
+          "max": 175.80725414031667
+        }
+      },
+      "ttfwDeltaSeconds": -0.1756565152097309
+    },
+    {
+      "profile": "same-region",
+      "medianRttMs": 80,
+      "sigma": 0.3,
+      "call": "fx.04.tech_support_cold_call",
+      "onDevice": {
+        "warningAt": 13.814834999918949,
+        "leadSeconds": 38.68516500008105,
+        "queries": 225,
+        "roundTripMs": {
+          "n": 216,
+          "min": 4.824999928474426,
+          "mean": 10.061342595903962,
+          "p50": 9.495000004768372,
+          "p90": 12.715000033378601,
+          "p99": 17.25,
+          "p999": 23.365000009536743,
+          "max": 23.365000009536743
+        }
+      },
+      "hosted": {
+        "warningAt": 14.000198723265383,
+        "leadSeconds": 38.499801276734615,
+        "queries": 214,
+        "roundTripMs": {
+          "n": 205,
+          "min": 36.62330892612073,
+          "mean": 93.42328348627593,
+          "p50": 86.13112937665018,
+          "p90": 132.1546431119802,
+          "p99": 162.68761102935835,
+          "p999": 174.91225427859945,
+          "max": 174.91225427859945
+        }
+      },
+      "ttfwDeltaSeconds": 0.18536372334643403
+    },
+    {
+      "profile": "same-region",
+      "medianRttMs": 80,
+      "sigma": 0.3,
+      "call": "fx.05.family_emergency_grandson",
+      "onDevice": {
+        "warningAt": 26.124630000114482,
+        "leadSeconds": 31.375369999885518,
+        "queries": 245,
+        "roundTripMs": {
+          "n": 238,
+          "min": 7.534999966621399,
+          "mean": 11.340063024468783,
+          "p50": 10.795000076293945,
+          "p90": 14.394999980926514,
+          "p99": 16.9099999666214,
+          "p999": 18.699999928474426,
+          "max": 18.699999928474426
+        }
+      },
+      "hosted": {
+        "warningAt": 26.28978422602102,
+        "leadSeconds": 31.21021577397898,
+        "queries": 241,
+        "roundTripMs": {
+          "n": 234,
+          "min": 39.763308911815614,
+          "mean": 93.87054763579704,
+          "p50": 86.94512237514414,
+          "p90": 127.87324658514937,
+          "p99": 162.68761091014906,
+          "p999": 175.25225419276876,
+          "max": 175.25225419276876
+        }
+      },
+      "ttfwDeltaSeconds": 0.16515422590653728
+    },
+    {
+      "profile": "same-region",
+      "medianRttMs": 80,
+      "sigma": 0.3,
+      "call": "fx.06.kyc_expiry_remote_app",
+      "onDevice": {
+        "warningAt": 5.714985000014304,
+        "leadSeconds": 36.7850149999857,
+        "queries": 237,
+        "roundTripMs": {
+          "n": 227,
+          "min": 5.134999990463257,
+          "mean": 10.36103524090435,
+          "p50": 9.930000066757202,
+          "p90": 12.59500002861023,
+          "p99": 17.0900000333786,
+          "p999": 18.65500009059906,
+          "max": 18.65500009059906
+        }
+      },
+      "hosted": {
+        "warningAt": 5.834646973441872,
+        "leadSeconds": 36.66535302655813,
+        "queries": 233,
+        "roundTripMs": {
+          "n": 223,
+          "min": 38.013308911815614,
+          "mean": 94.35920181165739,
+          "p50": 88.42195157828941,
+          "p90": 127.9682466137596,
+          "p99": 162.1426110722737,
+          "p999": 176.41225415939016,
+          "max": 176.41225415939016
+        }
+      },
+      "ttfwDeltaSeconds": 0.11966197342756857
+    },
+    {
+      "profile": "cross-region",
+      "medianRttMs": 180,
+      "sigma": 0.4,
+      "call": "fx.01.digital_arrest_parcel",
+      "onDevice": {
+        "warningAt": 16.815639999985713,
+        "leadSeconds": 50.68436000001429,
+        "queries": 297,
+        "roundTripMs": {
+          "n": 281,
+          "min": 4.264999985694885,
+          "mean": 9.787010676071738,
+          "p50": 9.56000006198883,
+          "p90": 11.080000042915344,
+          "p99": 22.229999899864197,
+          "p999": 45.360000014305115,
+          "max": 45.360000014305115
+        }
+      },
+      "hosted": {
+        "warningAt": 17.058576513529324,
+        "leadSeconds": 50.441423486470676,
+        "queries": 286,
+        "roundTripMs": {
+          "n": 270,
+          "min": 55.90846812871049,
+          "mean": 204.028824129404,
+          "p50": 185.35885178389464,
+          "p90": 293.5328608350829,
+          "p99": 480.76848785595496,
+          "p999": 520.9617435500384,
+          "max": 520.9617435500384
+        }
+      },
+      "ttfwDeltaSeconds": 0.24293651354361145
+    },
+    {
+      "profile": "cross-region",
+      "medianRttMs": 180,
+      "sigma": 0.4,
+      "call": "fx.02.otp_harvest_card_alert",
+      "onDevice": {
+        "warningAt": 8.724825000047682,
+        "leadSeconds": 34.77517499995232,
+        "queries": 206,
+        "roundTripMs": {
+          "n": 195,
+          "min": 4.120000004768372,
+          "mean": 10.117820511108789,
+          "p50": 9.825000047683716,
+          "p90": 12.59499990940094,
+          "p99": 18.97000002861023,
+          "p999": 21.570000052452087,
+          "max": 21.570000052452087
+        }
+      },
+      "hosted": {
+        "warningAt": 9.222637172791545,
+        "leadSeconds": 34.27736282720846,
+        "queries": 199,
+        "roundTripMs": {
+          "n": 191,
+          "min": 55.388468028574685,
+          "mean": 206.7116716002558,
+          "p50": 180.5072786404313,
+          "p90": 331.7384546634358,
+          "p99": 480.2784878464182,
+          "p999": 486.0511143484913,
+          "max": 486.0511143484913
+        }
+      },
+      "ttfwDeltaSeconds": 0.49781217274386336
+    },
+    {
+      "profile": "cross-region",
+      "medianRttMs": 180,
+      "sigma": 0.4,
+      "call": "fx.03.ceo_voice_clone_wire",
+      "onDevice": {
+        "warningAt": 28.216625000000043,
+        "leadSeconds": 27.283374999999957,
+        "queries": 202,
+        "roundTripMs": {
+          "n": 199,
+          "min": 4.909999966621399,
+          "mean": 11.398517587077079,
+          "p50": 10.575000047683716,
+          "p90": 15.589999914169312,
+          "p99": 21.574999928474426,
+          "p999": 31.7849999666214,
+          "max": 31.7849999666214
+        }
+      },
+      "hosted": {
+        "warningAt": 34.663208018614654,
+        "leadSeconds": 20.836791981385346,
+        "queries": 192,
+        "roundTripMs": {
+          "n": 189,
+          "min": 57.2134680762584,
+          "mean": 206.50779392250553,
+          "p50": 179.3303397574257,
+          "p90": 312.9638451821502,
+          "p99": 480.5234878511866,
+          "p999": 485.60111442001687,
+          "max": 485.60111442001687
+        }
+      },
+      "ttfwDeltaSeconds": 6.446583018614611
+    },
+    {
+      "profile": "cross-region",
+      "medianRttMs": 180,
+      "sigma": 0.4,
+      "call": "fx.04.tech_support_cold_call",
+      "onDevice": {
+        "warningAt": 13.814834999918949,
+        "leadSeconds": 38.68516500008105,
+        "queries": 225,
+        "roundTripMs": {
+          "n": 216,
+          "min": 4.824999928474426,
+          "mean": 10.061342595903962,
+          "p50": 9.495000004768372,
+          "p90": 12.715000033378601,
+          "p99": 17.25,
+          "p999": 23.365000009536743,
+          "max": 23.365000009536743
+        }
+      },
+      "hosted": {
+        "warningAt": 14.035441213741997,
+        "leadSeconds": 38.464558786258,
+        "queries": 220,
+        "roundTripMs": {
+          "n": 211,
+          "min": 55.36346805241654,
+          "mean": 204.13129983571807,
+          "p50": 179.93488208944063,
+          "p90": 305.17228603196776,
+          "p99": 439.4658445691228,
+          "p999": 484.5211143771015,
+          "max": 484.5211143771015
+        }
+      },
+      "ttfwDeltaSeconds": 0.22060621382304824
+    },
+    {
+      "profile": "cross-region",
+      "medianRttMs": 180,
+      "sigma": 0.4,
+      "call": "fx.05.family_emergency_grandson",
+      "onDevice": {
+        "warningAt": 26.124630000114482,
+        "leadSeconds": 31.375369999885518,
+        "queries": 245,
+        "roundTripMs": {
+          "n": 238,
+          "min": 7.534999966621399,
+          "mean": 11.340063024468783,
+          "p50": 10.795000076293945,
+          "p90": 14.394999980926514,
+          "p99": 16.9099999666214,
+          "p999": 18.699999928474426,
+          "max": 18.699999928474426
+        }
+      },
+      "hosted": {
+        "warningAt": 26.378276278530358,
+        "leadSeconds": 31.121723721469642,
+        "queries": 235,
+        "roundTripMs": {
+          "n": 228,
+          "min": 57.21846807149003,
+          "mean": 205.0778709962864,
+          "p50": 179.96988205606203,
+          "p90": 307.25376197708465,
+          "p99": 438.94084459296465,
+          "p999": 485.95611431988107,
+          "max": 485.95611431988107
+        }
+      },
+      "ttfwDeltaSeconds": 0.25364627841587506
+    },
+    {
+      "profile": "cross-region",
+      "medianRttMs": 180,
+      "sigma": 0.4,
+      "call": "fx.06.kyc_expiry_remote_app",
+      "onDevice": {
+        "warningAt": 5.714985000014304,
+        "leadSeconds": 36.7850149999857,
+        "queries": 237,
+        "roundTripMs": {
+          "n": 227,
+          "min": 5.134999990463257,
+          "mean": 10.36103524090435,
+          "p50": 9.930000066757202,
+          "p90": 12.59500002861023,
+          "p99": 17.0900000333786,
+          "p999": 18.65500009059906,
+          "max": 18.65500009059906
+        }
+      },
+      "hosted": {
+        "warningAt": 5.678283045746101,
+        "leadSeconds": 36.8217169542539,
+        "queries": 228,
+        "roundTripMs": {
+          "n": 218,
+          "min": 56.55846798565934,
+          "mean": 207.05760976578642,
+          "p50": 179.75033971451035,
+          "p90": 332.04845460621533,
+          "p99": 438.89084464064837,
+          "p999": 486.3061143437229,
+          "max": 486.3061143437229
+        }
+      },
+      "ttfwDeltaSeconds": -0.036701954268202996
+    },
+    {
+      "profile": "mobile",
+      "medianRttMs": 300,
+      "sigma": 0.6,
+      "call": "fx.01.digital_arrest_parcel",
+      "onDevice": {
+        "warningAt": 16.815639999985713,
+        "leadSeconds": 50.68436000001429,
+        "queries": 297,
+        "roundTripMs": {
+          "n": 281,
+          "min": 4.264999985694885,
+          "mean": 9.787010676071738,
+          "p50": 9.56000006198883,
+          "p90": 11.080000042915344,
+          "p99": 22.229999899864197,
+          "p999": 45.360000014305115,
+          "max": 45.360000014305115
+        }
+      },
+      "hosted": {
+        "warningAt": 16.725662398075226,
+        "leadSeconds": 50.77433760192477,
+        "queries": 210,
+        "roundTripMs": {
+          "n": 194,
+          "min": 49.169033553247935,
+          "mean": 378.3386340234044,
+          "p50": 309.49214315534374,
+          "p90": 639.834822877302,
+          "p99": 1278.559258989578,
+          "p999": 1299.1129745376447,
+          "max": 1299.1129745376447
+        }
+      },
+      "ttfwDeltaSeconds": -0.08997760191048698
+    },
+    {
+      "profile": "mobile",
+      "medianRttMs": 300,
+      "sigma": 0.6,
+      "call": "fx.02.otp_harvest_card_alert",
+      "onDevice": {
+        "warningAt": 8.724825000047682,
+        "leadSeconds": 34.77517499995232,
+        "queries": 206,
+        "roundTripMs": {
+          "n": 195,
+          "min": 4.120000004768372,
+          "mean": 10.117820511108789,
+          "p50": 9.825000047683716,
+          "p90": 12.59499990940094,
+          "p99": 18.97000002861023,
+          "p999": 21.570000052452087,
+          "max": 21.570000052452087
+        }
+      },
+      "hosted": {
+        "warningAt": 10.438150588878067,
+        "leadSeconds": 33.06184941112193,
+        "queries": 152,
+        "roundTripMs": {
+          "n": 141,
+          "min": 49.514033581858165,
+          "mean": 369.95537368107796,
+          "p50": 283.7999693724149,
+          "p90": 664.7020464877061,
+          "p99": 1059.9789588928356,
+          "p999": 1277.1742588799054,
+          "max": 1277.1742588799054
+        }
+      },
+      "ttfwDeltaSeconds": 1.7133255888303847
+    },
+    {
+      "profile": "mobile",
+      "medianRttMs": 300,
+      "sigma": 0.6,
+      "call": "fx.03.ceo_voice_clone_wire",
+      "onDevice": {
+        "warningAt": 28.216625000000043,
+        "leadSeconds": 27.283374999999957,
+        "queries": 202,
+        "roundTripMs": {
+          "n": 199,
+          "min": 4.909999966621399,
+          "mean": 11.398517587077079,
+          "p50": 10.575000047683716,
+          "p90": 15.589999914169312,
+          "p99": 21.574999928474426,
+          "p999": 31.7849999666214,
+          "max": 31.7849999666214
+        }
+      },
+      "hosted": {
+        "warningAt": 28.172368447142716,
+        "leadSeconds": 27.327631552857284,
+        "queries": 146,
+        "roundTripMs": {
+          "n": 143,
+          "min": 51.199033524637706,
+          "mean": 372.12185671365256,
+          "p50": 278.1017313778074,
+          "p90": 726.9411933069459,
+          "p99": 1279.5842589657361,
+          "p999": 1303.0579745900968,
+          "max": 1303.0579745900968
+        }
+      },
+      "ttfwDeltaSeconds": -0.04425655285732688
+    },
+    {
+      "profile": "mobile",
+      "medianRttMs": 300,
+      "sigma": 0.6,
+      "call": "fx.04.tech_support_cold_call",
+      "onDevice": {
+        "warningAt": 13.814834999918949,
+        "leadSeconds": 38.68516500008105,
+        "queries": 225,
+        "roundTripMs": {
+          "n": 216,
+          "min": 4.824999928474426,
+          "mean": 10.061342595903962,
+          "p50": 9.495000004768372,
+          "p90": 12.715000033378601,
+          "p99": 17.25,
+          "p999": 23.365000009536743,
+          "max": 23.365000009536743
+        }
+      },
+      "hosted": {
+        "warningAt": 14.265959508292928,
+        "leadSeconds": 38.23404049170707,
+        "queries": 165,
+        "roundTripMs": {
+          "n": 156,
+          "min": 49.39403357708979,
+          "mean": 373.6487907764823,
+          "p50": 284.5176924978401,
+          "p90": 724.7161932831041,
+          "p99": 1276.2792590181882,
+          "p999": 1298.7029746902326,
+          "max": 1298.7029746902326
+        }
+      },
+      "ttfwDeltaSeconds": 0.45112450837397944
+    },
+    {
+      "profile": "mobile",
+      "medianRttMs": 300,
+      "sigma": 0.6,
+      "call": "fx.05.family_emergency_grandson",
+      "onDevice": {
+        "warningAt": 26.124630000114482,
+        "leadSeconds": 31.375369999885518,
+        "queries": 245,
+        "roundTripMs": {
+          "n": 238,
+          "min": 7.534999966621399,
+          "mean": 11.340063024468783,
+          "p50": 10.795000076293945,
+          "p90": 14.394999980926514,
+          "p99": 16.9099999666214,
+          "p999": 18.699999928474426,
+          "max": 18.699999928474426
+        }
+      },
+      "hosted": {
+        "warningAt": 27.71542868230462,
+        "leadSeconds": 29.78457131769538,
+        "queries": 175,
+        "roundTripMs": {
+          "n": 169,
+          "min": 51.954033519869334,
+          "mean": 377.4896798577124,
+          "p50": 297.7486154373242,
+          "p90": 725.4911933784715,
+          "p99": 1279.8892590324933,
+          "p999": 1299.652974618707,
+          "max": 1299.652974618707
+        }
+      },
+      "ttfwDeltaSeconds": 1.5907986821901368
+    },
+    {
+      "profile": "mobile",
+      "medianRttMs": 300,
+      "sigma": 0.6,
+      "call": "fx.06.kyc_expiry_remote_app",
+      "onDevice": {
+        "warningAt": 5.714985000014304,
+        "leadSeconds": 36.7850149999857,
+        "queries": 237,
+        "roundTripMs": {
+          "n": 227,
+          "min": 5.134999990463257,
+          "mean": 10.36103524090435,
+          "p50": 9.930000066757202,
+          "p90": 12.59500002861023,
+          "p99": 17.0900000333786,
+          "p999": 18.65500009059906,
+          "max": 18.65500009059906
+        }
+      },
+      "hosted": {
+        "warningAt": 5.863709423662551,
+        "leadSeconds": 36.63629057633745,
+        "queries": 167,
+        "roundTripMs": {
+          "n": 157,
+          "min": 49.66403343880702,
+          "mean": 376.3047353365793,
+          "p50": 299.0136154230191,
+          "p90": 734.0211933498613,
+          "p99": 1277.9942589323575,
+          "p999": 1299.9479745757917,
+          "max": 1299.9479745757917
+        }
+      },
+      "ttfwDeltaSeconds": 0.14872442364824767
+    }
+  ],
+  "familyLabels": {
+    "digital_arrest": "Digital arrest",
+    "parcel_customs": "Parcel / customs",
+    "kyc_expiry": "KYC expiry",
+    "ceo_wire_fraud": "CEO / vendor wire fraud",
+    "otp_harvest": "OTP harvest",
+    "tech_support": "Tech support",
+    "romance_advance_fee": "Romance / advance fee",
+    "family_emergency": "Family emergency (voice clone)",
+    "benign": "No scam pattern"
+  }
+}
